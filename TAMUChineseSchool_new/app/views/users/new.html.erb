@@ -20,12 +20,22 @@
     </p>
 
     <p>
-      <%= f.label :last_name_chn %><br>
-      <%= f.text_field :last_name_chn %>
+        <%= f.select :gender, ['Male', 'Female'] %>
     </p>
 
     <p>
-        <%= f.select :gender, ['Male', 'Female'] %>
+      <%= f.label :address %><br>
+      <%= f.text_area :address %>
+    </p>
+
+    <p>
+      <%= f.label :phone %><br>
+      <%= f.text_field :phone %>
+    </p>
+
+    <p>
+      <%= f.label :email %><br>
+      <%= f.text_field :email %>
     </p>
 
     <p>
