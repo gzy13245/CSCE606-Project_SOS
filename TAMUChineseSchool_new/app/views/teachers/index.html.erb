@@ -1,0 +1,16 @@
+<h1>Listing all users</h1>
+
+<table>
+  <tr>
+    <th>Teachers</th>s
+
+  </tr>
+
+  <% @teachers.each do |teacher| %>
+      <tr>
+        <td><%= render text:teacher.inspect %></td>
+
+
+      </tr>
+  <% end %>
+</table>

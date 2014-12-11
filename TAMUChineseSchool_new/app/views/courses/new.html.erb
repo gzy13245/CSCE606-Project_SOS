@@ -34,7 +34,7 @@
 
       <tr>
         <td><%= f.label :Teacher %></td>
-        <td><%= f.select :Teacher, @teachers.collect { |a| a.last_name } %></td>
+        <td><%= f.select :Teacher, @teachers.collect { |a| a.fullname} %></td>
       </tr>
 
       <tr>

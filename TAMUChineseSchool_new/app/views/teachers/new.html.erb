@@ -1,9 +1,17 @@
-<%= form_for :teacher do |f| %>
+<%= form_for :teacher , url: teachers_path do |f| %>
     <table>
 
       <tr>
-        <td><%= f.label :User %></td>
-        <td><%= f.select :User, @users.collect { |a| a.firstName+a.last_name } %></td>
+        <td><%= f.label :user %></td>
+       <!-- <td><%= f.select @user_id, @users.map { |a| a.id } %></td>-->
+
+        <!--<td> <%= f.select :user_id, @users.map {|r| [r.fullname,r.id] } %></td>-->
+
+        <p>
+          <strong>user_id:</strong>
+         <!-- <%= f.text_field @tmp %>-->
+        </p>
+
       </tr>
 
     </table>
