@@ -1,5 +1,8 @@
 <h1>Listing all courses</h1>
 
+<%= link_to 'New course', new_course_path %>
+<br><br>
+
 <table>
   <tr>
     <th>Year</th>
@@ -20,10 +23,11 @@
         <td><%= course.class_room %></td>
         <td><%= course.time %></td>
         <td><%= course.textbook %></td>
+        <td><%= course.teacher.fullname %></td>
         <td><%= course.course_discription %></td>
 
-        <td><%= link_to 'Show', teacher_path(teacher) %></td>
-        <td><%= link_to 'Delete', teacher_path(teacher),
+        <td><%= link_to 'Show', course_path(course) %></td>
+        <td><%= link_to 'Delete', course_path(course),
                         method: :delete, data: { confirm: 'Are you sure to delete?'}%></td>
 
       </tr>

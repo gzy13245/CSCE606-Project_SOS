@@ -1,47 +1,48 @@
 
 
-<%= form_for :course do |f| %>
+<%= form_for :course, url: courses_path do |f| %>
     <table>
       <tr>
-        <td> <%= f.label :Year %></td>
-        <td><%= f.text_field :title %></td>
+        <td> <%= f.label :year %></td>
+        <td><%= f.text_field :year %></td>
       </tr>
 
       <tr>
-        <td><%= f.label :Semester %></td>
-        <td><%= f.select :Semester, ['Spring', 'Fall'] %></td>
+        <td><%= f.label :semester %></td>
+        <td><%= f.select :semester, ['Spring', 'Fall'] %></td>
 
       </tr>
 
       <tr>
-        <td><%= f.label :Name %></td>
-        <td><%= f.text_area :text %></td>
+        <td><%= f.label :name %></td>
+        <td><%= f.text_area :name %></td>
       </tr>
       <tr>
-        <td><%= f.label :Classroom %></td>
-        <td><%= f.text_area :text %></td>
-      </tr>
-
-      <tr>
-        <td><%= f.label :Time %></td>
-        <td><%= time_select("article", "written_on", prompt: {hour: 'Choose hour', minute: 'Choose minute', second: 'Choose seconds'}) %> -- <%= time_select("article", "written_on", prompt: {hour: 'Choose hour', minute: 'Choose minute', second: 'Choose seconds'}) %></td>
+        <td><%= f.label :class_room %></td>
+        <td><%= f.text_area :class_room %></td>
       </tr>
 
       <tr>
-        <td><%= f.label :Textbook %></td>
-        <td><%= f.text_area :text %></td>
+        <td><%= f.label :time %></td>
+        <td>
+          <%= time_select("ar", "we", prompt: {hour: 'Choose hour', minute: 'Choose minute', second: 'Choose seconds'}) %> --
+          <%= time_select("article", "written_on", prompt: {hour: 'Choose hour', minute: 'Choose minute', second: 'Choose seconds'}) %></td>
       </tr>
 
       <tr>
-        <td><%= f.label :Teacher %></td>
-
-
-        <td> <%= f.select :Teacher, @teachers.map {|r| [r.fullname,r.id] } %></td>
+        <td><%= f.label :textbook %></td>
+        <td><%= f.text_field :textbook %></td>
       </tr>
 
       <tr>
-        <td><%= f.label :"Course Discription" %></td>
-        <td><%= f.text_area :text %></td>
+        <td><%= f.label :teacher %></td>
+
+        <td> <%= f.select :teacher_id, @teachers.map {|r| [r.fullname,r.id] } %></td>
+      </tr>
+
+      <tr>
+        <td><%= f.label :course_discription %></td>
+        <td><%= f.text_area :course_discription %></td>
       </tr>
 
     </table>

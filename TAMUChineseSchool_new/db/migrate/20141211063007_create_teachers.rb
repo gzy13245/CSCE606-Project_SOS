@@ -6,6 +6,6 @@ class CreateTeachers < ActiveRecord::Migration
       t.timestamps
     end
 
-    add_index :teachers, :user_id
+    #add_index :teachers, :user_id
   end
 end

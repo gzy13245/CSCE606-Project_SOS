@@ -10,7 +10,8 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user = User.find(params[:id])
+    redirect_to action: "index"
+#    @user = User.find(params[:id])
   end
 
   def index
