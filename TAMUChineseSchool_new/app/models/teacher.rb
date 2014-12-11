@@ -4,7 +4,7 @@ class Teacher < ActiveRecord::Base
 
   def fullname
 
-    self.user.fullname
+    User.find(user_id).fullname
 
 
   end
