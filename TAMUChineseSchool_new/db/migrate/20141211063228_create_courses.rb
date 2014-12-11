@@ -2,7 +2,7 @@ class CreateCourses < ActiveRecord::Migration
   def change
     create_table :courses do |t|
       t.string :year
-      t.stringd :semester
+      t.string :semester
       t.string :name
       t.string :class_room
       t.string :time
