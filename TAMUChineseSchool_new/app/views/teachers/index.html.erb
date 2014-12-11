@@ -1,15 +1,30 @@
-<h1>Listing all users</h1>
+<h1>Listing all teachers</h1>
+
+<%= link_to 'New teacher', new_teacher_path %>
+<br><br>
 
 <table>
   <tr>
-    <th>Teachers</th>s
+    <th>Last name</th>
+    <th>First name</th>
+    <th>Email</th>
+
 
   </tr>
 
   <% @teachers.each do |teacher| %>
       <tr>
+<!--
         <td><%= render text:teacher.inspect %></td>
+-->
 
+        <% cur_user = User.find(teacher.user_id) %>
+        <td><%= cur_user.last_name %></td>
+        <td><%= cur_user.first_name %></td>
+        <td><%= cur_user.email %></td>
+
+        <td><%= link_to 'Delete', teacher_path(teacher),
+                        method: :delete, data: { confirm: 'Are you sure to delete?'}%></td>
 
       </tr>
   <% end %>

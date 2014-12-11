@@ -3,14 +3,8 @@
 
       <tr>
         <td><%= f.label :user %></td>
-       <!-- <td><%= f.select @user_id, @users.map { |a| a.id } %></td>-->
 
         <td> <%= f.select :user_id, @users.map {|r| [r.fullname,r.id] } %></td>
-
-        <p>
-          <strong>user_id:</strong>
-       <!--  <%= f.text_field :user_id %>
-       --> </p>
 
       </tr>
 
