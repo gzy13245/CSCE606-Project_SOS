@@ -1,0 +1,15 @@
+<%= form_for :teacher do |f| %>
+    <table>
+
+      <tr>
+        <td><%= f.label :User %></td>
+        <td><%= f.select :User, @users.collect { |a| a.firstName+a.last_name } %></td>
+      </tr>
+
+    </table>
+
+    <p>
+      <%= f.submit value="Add Teacher" %>
+    </p>
+
+<% end %>
