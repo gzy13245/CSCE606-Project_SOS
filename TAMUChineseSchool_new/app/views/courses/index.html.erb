@@ -1,1 +1,31 @@
-<h1>Listing all users</h1>
+<h1>Listing all courses</h1>
+
+<table>
+  <tr>
+    <th>Year</th>
+    <th>Semester</th>
+    <th>Name</th>
+    <th>Classroom</th>
+    <th>Time</th>
+    <th>Textbook</th>
+    <th>Teacher</th>
+    <th>Description</th>
+  </tr>
+
+  <% @courses.each do |course| %>
+      <tr>
+        <td><%= course.year %></td>
+        <td><%= course.semester %></td>
+        <td><%= course.name %></td>
+        <td><%= course.class_room %></td>
+        <td><%= course.time %></td>
+        <td><%= course.textbook %></td>
+        <td><%= course.course_discription %></td>
+
+        <td><%= link_to 'Show', teacher_path(teacher) %></td>
+        <td><%= link_to 'Delete', teacher_path(teacher),
+                        method: :delete, data: { confirm: 'Are you sure to delete?'}%></td>
+
+      </tr>
+  <% end %>
+</table>
