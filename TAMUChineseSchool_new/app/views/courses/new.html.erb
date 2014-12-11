@@ -1,0 +1,51 @@
+
+
+<%= form_for :course do |f| %>
+    <table>
+      <tr>
+        <td> <%= f.label :Year %></td>
+        <td><%= f.text_field :title %></td>
+      </tr>
+
+      <tr>
+        <td><%= f.label :Semester %></td>
+        <td><%= f.select :Semester, ['Spring', 'Fall'] %></td>
+
+      </tr>
+
+      <tr>
+        <td><%= f.label :Name %></td>
+        <td><%= f.text_area :text %></td>
+      </tr>
+      <tr>
+        <td><%= f.label :Classroom %></td>
+        <td><%= f.text_area :text %></td>
+      </tr>
+
+      <tr>
+        <td><%= f.label :Time %></td>
+        <td><%= time_select("article", "written_on", prompt: {hour: 'Choose hour', minute: 'Choose minute', second: 'Choose seconds'}) %> -- <%= time_select("article", "written_on", prompt: {hour: 'Choose hour', minute: 'Choose minute', second: 'Choose seconds'}) %></td>
+      </tr>
+
+      <tr>
+        <td><%= f.label :Textbook %></td>
+        <td><%= f.text_area :text %></td>
+      </tr>
+
+      <tr>
+        <td><%= f.label :Teacher %></td>
+        <td><%= f.select :Teacher, @teachers.collect { |a| a.last_name } %></td>
+      </tr>
+
+      <tr>
+        <td><%= f.label :"Course Discription" %></td>
+        <td><%= f.text_area :text %></td>
+      </tr>
+
+    </table>
+
+    <p>
+      <%= f.submit value="Add " %>
+    </p>
+
+<% end %>
