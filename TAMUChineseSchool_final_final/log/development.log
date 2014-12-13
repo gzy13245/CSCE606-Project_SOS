@@ -1463,3 +1463,1114 @@ Processing by VisitorsController#index as HTML
   Rendered layouts/_navigation.html.erb (11.8ms)
   Rendered layouts/_messages.html.erb (0.1ms)
 Completed 200 OK in 317ms (Views: 314.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-12-14 00:10:58 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by UsersController#index as HTML
+Completed 401 Unauthorized in 11ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-14 00:10:58 +0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (52.5ms)
+  Rendered layouts/_navigation_links.html.erb (0.9ms)
+  Rendered layouts/_navigation.html.erb (2.4ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 3462ms (Views: 3449.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-14 00:11:02 +0800
+Processing by VisitorsController#index as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users"
+  Rendered visitors/index.html.erb within layouts/application (1.7ms)
+  Rendered layouts/_navigation_links.html.erb (0.4ms)
+  Rendered layouts/_navigation.html.erb (4.7ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 184ms (Views: 182.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-14 00:11:40 +0800
+Processing by VisitorsController#index as HTML
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_navigation_links.html.erb (0.9ms)
+  Rendered layouts/_navigation.html.erb (2.3ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 144ms (Views: 143.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-14 00:11:41 +0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (3.3ms)
+  Rendered layouts/_navigation_links.html.erb (0.3ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 143ms (Views: 141.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-12-14 00:11:42 +0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_navigation_links.html.erb (0.4ms)
+  Rendered layouts/_navigation.html.erb (1.2ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 130ms (Views: 127.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-14 00:11:43 +0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_navigation_links.html.erb (0.3ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 151ms (Views: 148.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-12-14 00:11:54 +0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_navigation_links.html.erb (0.5ms)
+  Rendered layouts/_navigation.html.erb (1.3ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 133ms (Views: 131.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-14 00:11:55 +0800
+Processing by VisitorsController#index as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users"
+  Rendered visitors/index.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_navigation_links.html.erb (0.5ms)
+  Rendered layouts/_navigation.html.erb (1.9ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 131ms (Views: 130.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-14 00:11:56 +0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (1.9ms)
+  Rendered layouts/_navigation_links.html.erb (0.3ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 120ms (Views: 118.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-12-14 00:12:10 +0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9gDdY05ermcOcXnJJ+No7yKG0abZyiNTdH+ZpzCWfVg=", "user"=>{"email"=>"user@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'user@example.com'  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1[0m  [["current_sign_in_at", "2014-12-13 16:12:10.688436"], ["sign_in_count", 2], ["updated_at", "2014-12-13 16:12:10.689404"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 95ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-14 00:12:10 +0800
+Processing by VisitorsController#index as HTML
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (0.8ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/_navigation_links.html.erb (1.3ms)
+  Rendered layouts/_navigation.html.erb (2.3ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 140ms (Views: 138.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2014-12-14 00:12:13 +0800
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered devise/registrations/edit.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_navigation_links.html.erb (0.4ms)
+  Rendered layouts/_navigation.html.erb (1.2ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 159ms (Views: 157.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2014-12-14 00:12:20 +0800
+Processing by Upmin::ModelsController#dashboard as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/upmin-admin-0.1.01/app/views/upmin/models/dashboard.html.haml within layouts/upmin/application (2.0ms)
+  Rendered /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/upmin-admin-0.1.01/app/views/layouts/upmin/_navbar.html.haml (10.1ms)
+Completed 200 OK in 477ms (Views: 474.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2014-12-14 00:12:20 +0800
+Processing by Upmin::ModelsController#dashboard as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/upmin-admin-0.1.01/app/views/upmin/models/dashboard.html.haml within layouts/upmin/application (1.2ms)
+  Rendered /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/upmin-admin-0.1.01/app/views/layouts/upmin/_navbar.html.haml (5.4ms)
+Completed 200 OK in 109ms (Views: 107.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/" for 127.0.0.1 at 2014-12-14 00:12:30 +0800
+Processing by Upmin::ModelsController#dashboard as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/upmin-admin-0.1.01/app/views/upmin/models/dashboard.html.haml within layouts/upmin/application (0.1ms)
+  Rendered /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/upmin-admin-0.1.01/app/views/layouts/upmin/_navbar.html.haml (5.1ms)
+Completed 200 OK in 116ms (Views: 114.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/m/User" for 127.0.0.1 at 2014-12-14 00:12:32 +0800
+Processing by Upmin::ModelsController#search as HTML
+  Parameters: {"klass"=>"User"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT DISTINCT COUNT(DISTINCT "users"."id") FROM "users"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  DISTINCT "users".* FROM "users"  LIMIT 30 OFFSET 0[0m
+  Rendered /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/upmin-admin-0.1.01/app/views/upmin/partials/search_results/_results.html.haml (10.1ms)
+  Rendered /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/upmin-admin-0.1.01/app/views/upmin/partials/search_boxes/_ransack_search_box.html.haml (10.7ms)
+  Rendered /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/upmin-admin-0.1.01/app/views/upmin/models/search.html.haml within layouts/upmin/application (41.4ms)
+  Rendered /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/upmin-admin-0.1.01/app/views/layouts/upmin/_navbar.html.haml (3.1ms)
+Completed 200 OK in 155ms (Views: 151.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-12-14 00:12:45 +0800
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  Rendered users/_user.html.erb (11.6ms)
+  Rendered users/_user.html.erb (1.5ms)
+  Rendered users/index.html.erb within layouts/application (16.9ms)
+  Rendered layouts/_navigation_links.html.erb (0.3ms)
+  Rendered layouts/_navigation.html.erb (1.6ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 162ms (Views: 158.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2014-12-14 00:12:58 +0800
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered devise/registrations/edit.html.erb within layouts/application (2.3ms)
+  Rendered layouts/_navigation_links.html.erb (0.3ms)
+  Rendered layouts/_navigation.html.erb (1.6ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 144ms (Views: 142.8ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-12-14 00:13:06 +0800
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"VkHS8jK1epxtUf7QyoEeED50hgY1A5tEnotOo/MITHE="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-14 00:13:06 +0800
+Processing by VisitorsController#index as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users"
+  Rendered visitors/index.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_navigation_links.html.erb (0.4ms)
+  Rendered layouts/_navigation.html.erb (1.1ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 129ms (Views: 128.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-14 00:13:08 +0800
+Processing by VisitorsController#index as HTML
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_navigation_links.html.erb (0.3ms)
+  Rendered layouts/_navigation.html.erb (1.1ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 134ms (Views: 133.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-12-14 00:13:09 +0800
+Processing by UsersController#index as HTML
+Completed 401 Unauthorized in 1ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-14 00:13:09 +0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (1.8ms)
+  Rendered layouts/_navigation_links.html.erb (0.4ms)
+  Rendered layouts/_navigation.html.erb (1.2ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 127ms (Views: 126.0ms | ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddFieldsToUsers (20141213162247)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.8ms)[0m  [1mALTER TABLE "users" ADD "last_name" varchar(255)[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "users" ADD "first_name" varchar(255)
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "users" ADD "last_name_chn" varchar(255)[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "users" ADD "first_name_chn" varchar(255)
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "users" ADD "gender" varchar(255)[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "users" ADD "address" varchar(255)
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "users" ADD "phone" varchar(255)[0m
+  [1m[35m (0.8ms)[0m  ALTER TABLE "users" ADD "email" varchar(255)
+SQLite3::SQLException: duplicate column name: email: ALTER TABLE "users" ADD "email" varchar(255)
+  [1m[36m (0.8ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddFieldsToUsers (20141213162247)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.5ms)[0m  [1mALTER TABLE "users" ADD "last_name" varchar(255)[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "users" ADD "first_name" varchar(255)
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "users" ADD "last_name_chn" varchar(255)[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "users" ADD "first_name_chn" varchar(255)
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "users" ADD "gender" varchar(255)[0m
+  [1m[35m (0.2ms)[0m  ALTER TABLE "users" ADD "address" varchar(255)
+  [1m[36m (0.1ms)[0m  [1mALTER TABLE "users" ADD "phone" varchar(255)[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141213162247"]]
+  [1m[36m (7.8ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to RemoveLastNamesFromUsers (20141213163554)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (1.7ms)[0m  [1mCREATE TEMPORARY TABLE "ausers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "created_at" datetime, "updated_at" datetime, "name" varchar(255), "role" integer, "last_name" varchar(255), "first_name" varchar(255), "last_name_chn" varchar(255), "first_name_chn" varchar(255), "gender" varchar(255), "address" varchar(255), "phone" varchar(255)) [0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.3ms)[0m  [1mCREATE UNIQUE INDEX "tindex_ausers_on_reset_password_token" ON "ausers" ("reset_password_token")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_ausers_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_ausers_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "tindex_ausers_on_email" ON "ausers" ("email")[0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "users"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "ausers" ("id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","sign_in_count","current_sign_in_at","last_sign_in_at","current_sign_in_ip","last_sign_in_ip","created_at","updated_at","name","role","last_name","first_name","last_name_chn","first_name_chn","gender","address","phone") VALUES (1, 'user@example.com', '$2a$10$yFenNmCx2Jcd6GrwvILvo.iu29FJe5pD2ZJqbHPnteZdioR6QZuTe', NULL, NULL, NULL, 2, '2014-12-13 16:12:10.688436', '2014-12-13 15:45:09.712644', '127.0.0.1', '127.0.0.1', '2014-12-13 15:36:29.505712', '2014-12-13 16:12:10.689404', NULL, 2, NULL, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [1m[35m (0.2ms)[0m  INSERT INTO "ausers" ("id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","sign_in_count","current_sign_in_at","last_sign_in_at","current_sign_in_ip","last_sign_in_ip","created_at","updated_at","name","role","last_name","first_name","last_name_chn","first_name_chn","gender","address","phone") VALUES (2, '1@1.com', '$2a$10$lLVR93d/rgUnGjFVtNC4xeUShVDD/EUC1V.bxZVjB/xXgLsczogVi', NULL, NULL, NULL, 1, '2014-12-13 15:40:23.714967', '2014-12-13 15:40:23.714967', '127.0.0.1', '127.0.0.1', '2014-12-13 15:40:23.699144', '2014-12-13 15:40:23.716250', 'Will Smith', 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL)
+  [1m[36m (7.8ms)[0m  [1mDROP TABLE "users"[0m
+  [1m[35m (0.5ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "created_at" datetime, "updated_at" datetime, "name" varchar(255), "role" integer, "first_name" varchar(255), "last_name_chn" varchar(255), "first_name_chn" varchar(255), "gender" varchar(255), "address" varchar(255), "phone" varchar(255)) 
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_ausers_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_ausers_on_email' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_ausers_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_ausers_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.5ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "ausers"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "users" ("id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","sign_in_count","current_sign_in_at","last_sign_in_at","current_sign_in_ip","last_sign_in_ip","created_at","updated_at","name","role","first_name","last_name_chn","first_name_chn","gender","address","phone") VALUES (1, 'user@example.com', '$2a$10$yFenNmCx2Jcd6GrwvILvo.iu29FJe5pD2ZJqbHPnteZdioR6QZuTe', NULL, NULL, NULL, 2, '2014-12-13 16:12:10.688436', '2014-12-13 15:45:09.712644', '127.0.0.1', '127.0.0.1', '2014-12-13 15:36:29.505712', '2014-12-13 16:12:10.689404', NULL, 2, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "users" ("id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","sign_in_count","current_sign_in_at","last_sign_in_at","current_sign_in_ip","last_sign_in_ip","created_at","updated_at","name","role","first_name","last_name_chn","first_name_chn","gender","address","phone") VALUES (2, '1@1.com', '$2a$10$lLVR93d/rgUnGjFVtNC4xeUShVDD/EUC1V.bxZVjB/xXgLsczogVi', NULL, NULL, NULL, 1, '2014-12-13 15:40:23.714967', '2014-12-13 15:40:23.714967', '127.0.0.1', '127.0.0.1', '2014-12-13 15:40:23.699144', '2014-12-13 15:40:23.716250', 'Will Smith', 0, NULL, NULL, NULL, NULL, NULL, NULL)
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "ausers"[0m
+  [1m[35m (0.1ms)[0m  CREATE TEMPORARY TABLE "ausers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "created_at" datetime, "updated_at" datetime, "name" varchar(255), "role" integer, "first_name" varchar(255), "last_name_chn" varchar(255), "first_name_chn" varchar(255), "gender" varchar(255), "address" varchar(255), "phone" varchar(255)) 
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "tindex_ausers_on_reset_password_token" ON "ausers" ("reset_password_token")[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_ausers_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_ausers_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "tindex_ausers_on_email" ON "ausers" ("email")[0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "users"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "ausers" ("id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","sign_in_count","current_sign_in_at","last_sign_in_at","current_sign_in_ip","last_sign_in_ip","created_at","updated_at","name","role","first_name","last_name_chn","first_name_chn","gender","address","phone") VALUES (1, 'user@example.com', '$2a$10$yFenNmCx2Jcd6GrwvILvo.iu29FJe5pD2ZJqbHPnteZdioR6QZuTe', NULL, NULL, NULL, 2, '2014-12-13 16:12:10.688436', '2014-12-13 15:45:09.712644', '127.0.0.1', '127.0.0.1', '2014-12-13 15:36:29.505712', '2014-12-13 16:12:10.689404', NULL, 2, NULL, NULL, NULL, NULL, NULL, NULL)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "ausers" ("id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","sign_in_count","current_sign_in_at","last_sign_in_at","current_sign_in_ip","last_sign_in_ip","created_at","updated_at","name","role","first_name","last_name_chn","first_name_chn","gender","address","phone") VALUES (2, '1@1.com', '$2a$10$lLVR93d/rgUnGjFVtNC4xeUShVDD/EUC1V.bxZVjB/xXgLsczogVi', NULL, NULL, NULL, 1, '2014-12-13 15:40:23.714967', '2014-12-13 15:40:23.714967', '127.0.0.1', '127.0.0.1', '2014-12-13 15:40:23.699144', '2014-12-13 15:40:23.716250', 'Will Smith', 0, NULL, NULL, NULL, NULL, NULL, NULL)
+  [1m[36m (0.1ms)[0m  [1mDROP TABLE "users"[0m
+  [1m[35m (0.1ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "created_at" datetime, "updated_at" datetime, "name" varchar(255), "role" integer, "last_name_chn" varchar(255), "first_name_chn" varchar(255), "gender" varchar(255), "address" varchar(255), "phone" varchar(255)) 
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_ausers_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_ausers_on_email' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_ausers_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_ausers_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "ausers"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "users" ("id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","sign_in_count","current_sign_in_at","last_sign_in_at","current_sign_in_ip","last_sign_in_ip","created_at","updated_at","name","role","last_name_chn","first_name_chn","gender","address","phone") VALUES (1, 'user@example.com', '$2a$10$yFenNmCx2Jcd6GrwvILvo.iu29FJe5pD2ZJqbHPnteZdioR6QZuTe', NULL, NULL, NULL, 2, '2014-12-13 16:12:10.688436', '2014-12-13 15:45:09.712644', '127.0.0.1', '127.0.0.1', '2014-12-13 15:36:29.505712', '2014-12-13 16:12:10.689404', NULL, 2, NULL, NULL, NULL, NULL, NULL)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "users" ("id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","sign_in_count","current_sign_in_at","last_sign_in_at","current_sign_in_ip","last_sign_in_ip","created_at","updated_at","name","role","last_name_chn","first_name_chn","gender","address","phone") VALUES (2, '1@1.com', '$2a$10$lLVR93d/rgUnGjFVtNC4xeUShVDD/EUC1V.bxZVjB/xXgLsczogVi', NULL, NULL, NULL, 1, '2014-12-13 15:40:23.714967', '2014-12-13 15:40:23.714967', '127.0.0.1', '127.0.0.1', '2014-12-13 15:40:23.699144', '2014-12-13 15:40:23.716250', 'Will Smith', 0, NULL, NULL, NULL, NULL, NULL)
+  [1m[36m (0.1ms)[0m  [1mDROP TABLE "ausers"[0m
+  [1m[35m (0.1ms)[0m  CREATE TEMPORARY TABLE "ausers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "created_at" datetime, "updated_at" datetime, "name" varchar(255), "role" integer, "last_name_chn" varchar(255), "first_name_chn" varchar(255), "gender" varchar(255), "address" varchar(255), "phone" varchar(255)) 
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "tindex_ausers_on_reset_password_token" ON "ausers" ("reset_password_token")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_ausers_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_ausers_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1mCREATE UNIQUE INDEX "tindex_ausers_on_email" ON "ausers" ("email")[0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "users"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "ausers" ("id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","sign_in_count","current_sign_in_at","last_sign_in_at","current_sign_in_ip","last_sign_in_ip","created_at","updated_at","name","role","last_name_chn","first_name_chn","gender","address","phone") VALUES (1, 'user@example.com', '$2a$10$yFenNmCx2Jcd6GrwvILvo.iu29FJe5pD2ZJqbHPnteZdioR6QZuTe', NULL, NULL, NULL, 2, '2014-12-13 16:12:10.688436', '2014-12-13 15:45:09.712644', '127.0.0.1', '127.0.0.1', '2014-12-13 15:36:29.505712', '2014-12-13 16:12:10.689404', NULL, 2, NULL, NULL, NULL, NULL, NULL)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "ausers" ("id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","sign_in_count","current_sign_in_at","last_sign_in_at","current_sign_in_ip","last_sign_in_ip","created_at","updated_at","name","role","last_name_chn","first_name_chn","gender","address","phone") VALUES (2, '1@1.com', '$2a$10$lLVR93d/rgUnGjFVtNC4xeUShVDD/EUC1V.bxZVjB/xXgLsczogVi', NULL, NULL, NULL, 1, '2014-12-13 15:40:23.714967', '2014-12-13 15:40:23.714967', '127.0.0.1', '127.0.0.1', '2014-12-13 15:40:23.699144', '2014-12-13 15:40:23.716250', 'Will Smith', 0, NULL, NULL, NULL, NULL, NULL)
+  [1m[36m (0.2ms)[0m  [1mDROP TABLE "users"[0m
+  [1m[35m (0.2ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "created_at" datetime, "updated_at" datetime, "name" varchar(255), "role" integer, "first_name_chn" varchar(255), "gender" varchar(255), "address" varchar(255), "phone" varchar(255)) 
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_ausers_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_ausers_on_email' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_ausers_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_ausers_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "ausers"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "users" ("id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","sign_in_count","current_sign_in_at","last_sign_in_at","current_sign_in_ip","last_sign_in_ip","created_at","updated_at","name","role","first_name_chn","gender","address","phone") VALUES (1, 'user@example.com', '$2a$10$yFenNmCx2Jcd6GrwvILvo.iu29FJe5pD2ZJqbHPnteZdioR6QZuTe', NULL, NULL, NULL, 2, '2014-12-13 16:12:10.688436', '2014-12-13 15:45:09.712644', '127.0.0.1', '127.0.0.1', '2014-12-13 15:36:29.505712', '2014-12-13 16:12:10.689404', NULL, 2, NULL, NULL, NULL, NULL)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "users" ("id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","sign_in_count","current_sign_in_at","last_sign_in_at","current_sign_in_ip","last_sign_in_ip","created_at","updated_at","name","role","first_name_chn","gender","address","phone") VALUES (2, '1@1.com', '$2a$10$lLVR93d/rgUnGjFVtNC4xeUShVDD/EUC1V.bxZVjB/xXgLsczogVi', NULL, NULL, NULL, 1, '2014-12-13 15:40:23.714967', '2014-12-13 15:40:23.714967', '127.0.0.1', '127.0.0.1', '2014-12-13 15:40:23.699144', '2014-12-13 15:40:23.716250', 'Will Smith', 0, NULL, NULL, NULL, NULL)
+  [1m[36m (0.1ms)[0m  [1mDROP TABLE "ausers"[0m
+  [1m[35m (0.1ms)[0m  CREATE TEMPORARY TABLE "ausers" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "created_at" datetime, "updated_at" datetime, "name" varchar(255), "role" integer, "first_name_chn" varchar(255), "gender" varchar(255), "address" varchar(255), "phone" varchar(255)) 
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "tindex_ausers_on_reset_password_token" ON "ausers" ("reset_password_token")[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_ausers_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_ausers_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "tindex_ausers_on_email" ON "ausers" ("email")[0m
+  [1m[35m (0.1ms)[0m  SELECT * FROM "users"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "ausers" ("id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","sign_in_count","current_sign_in_at","last_sign_in_at","current_sign_in_ip","last_sign_in_ip","created_at","updated_at","name","role","first_name_chn","gender","address","phone") VALUES (1, 'user@example.com', '$2a$10$yFenNmCx2Jcd6GrwvILvo.iu29FJe5pD2ZJqbHPnteZdioR6QZuTe', NULL, NULL, NULL, 2, '2014-12-13 16:12:10.688436', '2014-12-13 15:45:09.712644', '127.0.0.1', '127.0.0.1', '2014-12-13 15:36:29.505712', '2014-12-13 16:12:10.689404', NULL, 2, NULL, NULL, NULL, NULL)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "ausers" ("id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","sign_in_count","current_sign_in_at","last_sign_in_at","current_sign_in_ip","last_sign_in_ip","created_at","updated_at","name","role","first_name_chn","gender","address","phone") VALUES (2, '1@1.com', '$2a$10$lLVR93d/rgUnGjFVtNC4xeUShVDD/EUC1V.bxZVjB/xXgLsczogVi', NULL, NULL, NULL, 1, '2014-12-13 15:40:23.714967', '2014-12-13 15:40:23.714967', '127.0.0.1', '127.0.0.1', '2014-12-13 15:40:23.699144', '2014-12-13 15:40:23.716250', 'Will Smith', 0, NULL, NULL, NULL, NULL)
+  [1m[36m (0.1ms)[0m  [1mDROP TABLE "users"[0m
+  [1m[35m (0.1ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "created_at" datetime, "updated_at" datetime, "name" varchar(255), "role" integer, "gender" varchar(255), "address" varchar(255), "phone" varchar(255)) 
+  [1m[36m (0.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_ausers_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_ausers_on_email' AND type='index'
+[0m
+  [1m[35m (0.0ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='tindex_ausers_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='tindex_ausers_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (0.2ms)[0m  SELECT * FROM "ausers"
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "users" ("id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","sign_in_count","current_sign_in_at","last_sign_in_at","current_sign_in_ip","last_sign_in_ip","created_at","updated_at","name","role","gender","address","phone") VALUES (1, 'user@example.com', '$2a$10$yFenNmCx2Jcd6GrwvILvo.iu29FJe5pD2ZJqbHPnteZdioR6QZuTe', NULL, NULL, NULL, 2, '2014-12-13 16:12:10.688436', '2014-12-13 15:45:09.712644', '127.0.0.1', '127.0.0.1', '2014-12-13 15:36:29.505712', '2014-12-13 16:12:10.689404', NULL, 2, NULL, NULL, NULL)[0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "users" ("id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","sign_in_count","current_sign_in_at","last_sign_in_at","current_sign_in_ip","last_sign_in_ip","created_at","updated_at","name","role","gender","address","phone") VALUES (2, '1@1.com', '$2a$10$lLVR93d/rgUnGjFVtNC4xeUShVDD/EUC1V.bxZVjB/xXgLsczogVi', NULL, NULL, NULL, 1, '2014-12-13 15:40:23.714967', '2014-12-13 15:40:23.714967', '127.0.0.1', '127.0.0.1', '2014-12-13 15:40:23.699144', '2014-12-13 15:40:23.716250', 'Will Smith', 0, NULL, NULL, NULL)
+  [1m[36m (0.1ms)[0m  [1mDROP TABLE "ausers"[0m
+  [1m[35m (0.1ms)[0m  ALTER TABLE "users" ADD "name_chn" varchar(255)
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20141213163554"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+
+
+Started GET "/users" for 127.0.0.1 at 2014-12-14 00:57:32 +0800
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Processing by UsersController#index as HTML
+Completed 401 Unauthorized in 10ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-14 00:57:32 +0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (3.0ms)
+  Rendered layouts/_navigation_links.html.erb (0.3ms)
+  Rendered layouts/_navigation.html.erb (1.2ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 137ms (Views: 127.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-14 00:57:36 +0800
+Processing by VisitorsController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_navigation_links.html.erb (0.3ms)
+  Rendered layouts/_navigation.html.erb (1.2ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 137ms (Views: 135.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2014-12-14 00:57:38 +0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (14.7ms)
+  Rendered layouts/_navigation_links.html.erb (0.5ms)
+  Rendered layouts/_navigation.html.erb (1.8ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 152ms (Views: 150.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-12-14 01:00:32 +0800
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"62ZjnraaDzzSotg85HDesisBD1kQdewQQbDSgGz1jEM=", "user"=>{"name"=>"San Zhang", "name_chn"=>"zhangsan", "email"=>"zhangsan@gmail.com", "gender"=>"Male", "address"=>"HT road 2000", "phone"=>"950-203-4494", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Unpermitted parameters: name, name_chn, gender, address, phone
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users"  WHERE "users"."email" = 'zhangsan@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered devise/registrations/new.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_navigation_links.html.erb (0.8ms)
+  Rendered layouts/_navigation.html.erb (2.3ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 230ms (Views: 143.9ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2014-12-14 01:01:04 +0800
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"62ZjnraaDzzSotg85HDesisBD1kQdewQQbDSgGz1jEM=", "user"=>{"name"=>"Zhangsan", "name_chn"=>"zhangsan", "email"=>"zhangsan@gmail.com", "gender"=>"Male", "address"=>"HT road 2000", "phone"=>"940-230-3234", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+Unpermitted parameters: name, name_chn, gender, address, phone
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users"  WHERE "users"."email" = 'zhangsan@gmail.com' LIMIT 1
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "encrypted_password", "role", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-13 17:01:04.515060"], ["email", "zhangsan@gmail.com"], ["encrypted_password", "$2a$10$GwYp84MpdnVRUnRC/qmkEutkdcwMORUh1VbHEHBH96oKeZ.CIUYDy"], ["role", 0], ["updated_at", "2014-12-13 17:01:04.515060"]]
+  [1m[35m (1.0ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `current_sign_in_ip`
+Binary data inserted for `string` type on column `last_sign_in_ip`
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "current_sign_in_at" = ?, "current_sign_in_ip" = ?, "last_sign_in_at" = ?, "last_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 3  [["current_sign_in_at", "2014-12-13 17:01:04.519270"], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_at", "2014-12-13 17:01:04.519270"], ["last_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", "2014-12-13 17:01:04.520079"]]
+  [1m[36m (1.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/users
+Completed 302 Found in 97ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-12-14 01:01:04 +0800
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Completed 500 Internal Server Error in 7ms
+
+NoMethodError - undefined method `authorize' for #<UsersController:0x007f8ecc16e178>:
+  app/controllers/users_controller.rb:7:in `index'
+  actionpack (4.1.8) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.8) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.3) lib/quiet_assets.rb:23:in `call_with_quiet_assets'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/9d55d33f2c9b419e/variables" for 127.0.0.1 at 2014-12-14 01:01:04 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+
+
+Started POST "/users" for 127.0.0.1 at 2014-12-14 01:08:25 +0800
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"62ZjnraaDzzSotg85HDesisBD1kQdewQQbDSgGz1jEM=", "user"=>{"name"=>"Zhangsan", "name_chn"=>"zhangsan", "email"=>"zhangsan@gmail.com", "gender"=>"Male", "address"=>"HT road 2000", "phone"=>"940-230-3234", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 311ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-14 01:08:25 +0800
+Processing by VisitorsController#index as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users"
+  Rendered visitors/index.html.erb within layouts/application (3.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered layouts/_navigation_links.html.erb (2.3ms)
+  Rendered layouts/_navigation.html.erb (4.3ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 343ms (Views: 341.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-12-14 01:08:30 +0800
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-14 01:08:30 +0800
+Processing by VisitorsController#index as HTML
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (1.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/_navigation_links.html.erb (2.6ms)
+  Rendered layouts/_navigation.html.erb (4.8ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 136ms (Views: 135.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2014-12-14 01:08:32 +0800
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered devise/registrations/edit.html.erb within layouts/application (15.7ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (1.3ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 161ms (Views: 149.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2014-12-14 01:12:05 +0800
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered devise/registrations/edit.html.erb within layouts/application (8.7ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 130ms (Views: 128.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2014-12-14 01:12:17 +0800
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered devise/registrations/edit.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 116ms (Views: 114.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-14 01:12:18 +0800
+Processing by VisitorsController#index as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users"
+  Rendered visitors/index.html.erb within layouts/application (0.9ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered layouts/_navigation_links.html.erb (1.4ms)
+  Rendered layouts/_navigation.html.erb (2.4ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 133ms (Views: 132.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2014-12-14 01:12:19 +0800
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered devise/registrations/edit.html.erb within layouts/application (3.7ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (1.7ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 134ms (Views: 132.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2014-12-14 01:13:57 +0800
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered devise/registrations/edit.html.erb within layouts/application (5.2ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 146ms (Views: 144.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-14 01:14:01 +0800
+Processing by VisitorsController#index as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users"
+  Rendered visitors/index.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered layouts/_navigation_links.html.erb (1.3ms)
+  Rendered layouts/_navigation.html.erb (2.1ms)
+  Rendered layouts/_messages.html.erb (0.3ms)
+Completed 200 OK in 130ms (Views: 128.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2014-12-14 01:14:04 +0800
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered devise/registrations/edit.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_navigation_links.html.erb (0.2ms)
+  Rendered layouts/_navigation.html.erb (1.1ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 125ms (Views: 123.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-14 01:14:09 +0800
+Processing by VisitorsController#index as HTML
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (1.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/_navigation_links.html.erb (0.9ms)
+  Rendered layouts/_navigation.html.erb (1.7ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 113ms (Views: 111.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-12-14 01:14:11 +0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-14 01:14:11 +0800
+Processing by VisitorsController#index as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users"
+  Rendered visitors/index.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered layouts/_navigation_links.html.erb (1.0ms)
+  Rendered layouts/_navigation.html.erb (1.8ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 113ms (Views: 112.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-12-14 01:14:12 +0800
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-14 01:14:12 +0800
+Processing by VisitorsController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (2.0ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/_navigation_links.html.erb (1.4ms)
+  Rendered layouts/_navigation.html.erb (2.5ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 129ms (Views: 128.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-14 01:14:13 +0800
+Processing by VisitorsController#index as HTML
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (0.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/_navigation_links.html.erb (1.0ms)
+  Rendered layouts/_navigation.html.erb (2.2ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 117ms (Views: 116.5ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2014-12-14 01:14:15 +0800
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"62ZjnraaDzzSotg85HDesisBD1kQdewQQbDSgGz1jEM="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 3  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 14ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-14 01:14:15 +0800
+Processing by VisitorsController#index as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users"
+  Rendered visitors/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_navigation_links.html.erb (5.0ms)
+  Rendered layouts/_navigation.html.erb (5.8ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 141ms (Views: 140.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-12-14 01:14:16 +0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (6.4ms)
+  Rendered layouts/_navigation_links.html.erb (0.3ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 128ms (Views: 127.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-12-14 01:15:15 +0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PoccKz8Mj33o0twZzygfNezsEG1NNqHDKxyfbjI0cWY=", "user"=>{"email"=>"user@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."email" = 'user@example.com'  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = 1[0m  [["current_sign_in_at", "2014-12-13 17:15:16.065183"], ["last_sign_in_at", "2014-12-13 16:12:10.688436"], ["sign_in_count", 3], ["updated_at", "2014-12-13 17:15:16.066216"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+Redirected to http://0.0.0.0:3000/
+Completed 302 Found in 101ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-14 01:15:16 +0800
+Processing by VisitorsController#index as HTML
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (0.8ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/_navigation_links.html.erb (1.2ms)
+  Rendered layouts/_navigation.html.erb (2.0ms)
+  Rendered layouts/_messages.html.erb (0.2ms)
+Completed 200 OK in 139ms (Views: 138.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2014-12-14 01:15:18 +0800
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered devise/registrations/edit.html.erb within layouts/application (3.5ms)
+  Rendered layouts/_navigation_links.html.erb (0.3ms)
+  Rendered layouts/_navigation.html.erb (1.2ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 132ms (Views: 130.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2014-12-14 01:15:27 +0800
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered devise/registrations/edit.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_navigation_links.html.erb (0.4ms)
+  Rendered layouts/_navigation.html.erb (1.7ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 134ms (Views: 132.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2014-12-14 01:15:29 +0800
+Processing by Upmin::ModelsController#dashboard as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/upmin-admin-0.1.01/app/views/upmin/models/dashboard.html.haml within layouts/upmin/application (2.3ms)
+  Rendered /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/upmin-admin-0.1.01/app/views/layouts/upmin/_navbar.html.haml (9.1ms)
+Completed 200 OK in 233ms (Views: 231.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2014-12-14 01:15:29 +0800
+Processing by Upmin::ModelsController#dashboard as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/upmin-admin-0.1.01/app/views/upmin/models/dashboard.html.haml within layouts/upmin/application (1.5ms)
+  Rendered /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/upmin-admin-0.1.01/app/views/layouts/upmin/_navbar.html.haml (5.3ms)
+Completed 200 OK in 121ms (Views: 119.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-12-14 01:15:32 +0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/_user.html.erb (1.8ms)
+  Rendered users/_user.html.erb (1.3ms)
+  Rendered users/_user.html.erb (1.0ms)
+  Rendered users/index.html.erb within layouts/application (8.9ms)
+  Rendered layouts/_navigation_links.html.erb (0.5ms)
+  Rendered layouts/_navigation.html.erb (2.3ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 161ms (Views: 159.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2014-12-14 01:15:44 +0800
+Processing by Upmin::ModelsController#dashboard as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/upmin-admin-0.1.01/app/views/upmin/models/dashboard.html.haml within layouts/upmin/application (0.2ms)
+  Rendered /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/upmin-admin-0.1.01/app/views/layouts/upmin/_navbar.html.haml (3.4ms)
+Completed 200 OK in 109ms (Views: 107.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin" for 127.0.0.1 at 2014-12-14 01:15:44 +0800
+Processing by Upmin::ModelsController#dashboard as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/upmin-admin-0.1.01/app/views/upmin/models/dashboard.html.haml within layouts/upmin/application (0.1ms)
+  Rendered /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/upmin-admin-0.1.01/app/views/layouts/upmin/_navbar.html.haml (3.5ms)
+Completed 200 OK in 102ms (Views: 100.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/m/User" for 127.0.0.1 at 2014-12-14 01:15:45 +0800
+Processing by Upmin::ModelsController#search as HTML
+  Parameters: {"klass"=>"User"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  SELECT DISTINCT COUNT(DISTINCT "users"."id") FROM "users"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  DISTINCT "users".* FROM "users"  LIMIT 30 OFFSET 0[0m
+  Rendered /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/upmin-admin-0.1.01/app/views/upmin/partials/search_results/_results.html.haml (14.1ms)
+  Rendered /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/upmin-admin-0.1.01/app/views/upmin/partials/search_boxes/_ransack_search_box.html.haml (8.6ms)
+  Rendered /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/upmin-admin-0.1.01/app/views/upmin/models/search.html.haml within layouts/upmin/application (42.7ms)
+  Rendered /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/upmin-admin-0.1.01/app/views/layouts/upmin/_navbar.html.haml (3.8ms)
+Completed 200 OK in 153ms (Views: 148.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admin/" for 127.0.0.1 at 2014-12-14 01:15:47 +0800
+Processing by Upmin::ModelsController#dashboard as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/upmin-admin-0.1.01/app/views/upmin/models/dashboard.html.haml within layouts/upmin/application (0.1ms)
+  Rendered /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/upmin-admin-0.1.01/app/views/layouts/upmin/_navbar.html.haml (3.9ms)
+Completed 200 OK in 118ms (Views: 115.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/admin/m/User" for 127.0.0.1 at 2014-12-14 01:15:53 +0800
+Processing by Upmin::ModelsController#search as HTML
+  Parameters: {"klass"=>"User"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  SELECT DISTINCT COUNT(DISTINCT "users"."id") FROM "users"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  DISTINCT "users".* FROM "users"  LIMIT 30 OFFSET 0[0m
+  Rendered /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/upmin-admin-0.1.01/app/views/upmin/partials/search_results/_results.html.haml (6.2ms)
+  Rendered /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/upmin-admin-0.1.01/app/views/upmin/partials/search_boxes/_ransack_search_box.html.haml (4.0ms)
+  Rendered /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/upmin-admin-0.1.01/app/views/upmin/models/search.html.haml within layouts/upmin/application (20.4ms)
+  Rendered /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/upmin-admin-0.1.01/app/views/layouts/upmin/_navbar.html.haml (3.0ms)
+Completed 200 OK in 133ms (Views: 128.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-14 01:16:17 +0800
+Processing by VisitorsController#index as HTML
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users"
+  Rendered visitors/index.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered layouts/_navigation_links.html.erb (1.2ms)
+  Rendered layouts/_navigation.html.erb (1.9ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 126ms (Views: 125.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2014-12-14 01:16:20 +0800
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered devise/registrations/edit.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_navigation_links.html.erb (0.3ms)
+  Rendered layouts/_navigation.html.erb (1.4ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 135ms (Views: 132.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-14 01:20:29 +0800
+Processing by VisitorsController#index as HTML
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (0.8ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/_navigation_links.html.erb (1.0ms)
+  Rendered layouts/_navigation.html.erb (1.7ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 115ms (Views: 114.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2014-12-14 01:20:33 +0800
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users"
+  Rendered users/_user.html.erb (1.6ms)
+  Rendered users/_user.html.erb (1.9ms)
+  Rendered users/_user.html.erb (2.2ms)
+  Rendered users/index.html.erb within layouts/application (10.2ms)
+  Rendered layouts/_navigation_links.html.erb (0.3ms)
+  Rendered layouts/_navigation.html.erb (1.1ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 142ms (Views: 139.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-14 01:20:34 +0800
+Processing by VisitorsController#index as HTML
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  Rendered visitors/index.html.erb within layouts/application (0.9ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/_navigation_links.html.erb (1.0ms)
+  Rendered layouts/_navigation.html.erb (1.8ms)
+  Rendered layouts/_messages.html.erb (0.0ms)
+Completed 200 OK in 108ms (Views: 107.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2014-12-14 01:20:37 +0800
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered devise/registrations/edit.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_navigation_links.html.erb (0.3ms)
+  Rendered layouts/_navigation.html.erb (1.2ms)
+  Rendered layouts/_messages.html.erb (0.1ms)
+Completed 200 OK in 134ms (Views: 132.3ms | ActiveRecord: 0.3ms)

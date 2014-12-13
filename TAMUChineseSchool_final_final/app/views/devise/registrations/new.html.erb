@@ -7,9 +7,25 @@
       <%= f.text_field :name, :autofocus => true, class: 'form-control' %>
     </div>
     <div class="form-group">
+      <%= f.label :name_chn, 'Chinese Name' %>
+      <%= f.text_field :name_chn, class: 'form-control' %>
+    </div>
+    <div class="form-group">
       <%= f.label :email %>
       <%= f.email_field :email, class: 'form-control' %>
     </div>
+    <div class="form-group">
+      <%= f.label :gender %>
+      <%= f.select :gender, ['Male', 'Female'], class: 'form-control' %>
+    </div>
+    <div class="form-group">
+      <%= f.label :address %>
+      <%= f.text_field :address, class: 'form-control' %>
+    </div>
+      <div class="form-group">
+        <%= f.label :phone %>
+        <%= f.phone_field :phone, class: 'form-control' %>
+      </div>
     <div class="form-group">
       <%= f.label :password %>
       <%= f.password_field :password, class: 'form-control' %>

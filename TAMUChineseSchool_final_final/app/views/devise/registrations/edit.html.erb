@@ -7,13 +7,30 @@
       <%= f.text_field :name, :autofocus => true, class: 'form-control' %>
     </div>
     <div class="form-group">
+      <%= f.label :name_chn, 'Chinese Name' %>
+      <%= f.text_field :name_chn, class: 'form-control' %>
+    </div>
+    <div class="form-group">
       <%= f.label :email %>
       <%= f.email_field :email, class: 'form-control' %>
       <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
         <div>Currently waiting confirmation for: <%= resource.unconfirmed_email %></div>
       <% end %>
     </div>
-    <fieldset>
+      <div class="form-group">
+        <%= f.label :gender %>
+        <%= f.select :gender, ['Male', 'Female'], class: 'form-control' %>
+      </div>
+      <div class="form-group">
+        <%= f.label :address %>
+        <%= f.text_field :address, class: 'form-control' %>
+      </div>
+      <div class="form-group">
+        <%= f.label :phone %>
+        <%= f.phone_field :phone, class: 'form-control' %>
+      </div>
+
+      <fieldset>
       <p>Leave these fields blank if you don't want to change your password.</p>
       <div class="form-group">
         <%= f.label :password %>
