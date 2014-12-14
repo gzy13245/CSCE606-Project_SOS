@@ -1,7 +1,6 @@
 class User < ActiveRecord::Base
   has_one :family, dependent: :destroy
 
-  enum role: [:user, :vip, :admin]
   enum role: [:user, :teacher, :admin]
   after_initialize :set_default_role, :if => :new_record?
 
