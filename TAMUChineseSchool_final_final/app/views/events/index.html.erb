@@ -1,0 +1,40 @@
+<div class="col-md-8">
+
+  <h1 class="row">Events:</h1>
+
+  <% @events.each do |event| %>
+    <div class="row">
+     <a href="<%= event_path(event) %>"> <h2><%= event.event_name %></h2></a>
+    </div>
+    <br />
+    <div class="row">
+      <div class="auto-info col-sm-6">
+        <table class="table table-striped ">
+          <tr class="auto-price"><td>Year:</td><td><%= event.year.strftime("%Y") %></td></tr>
+          <tr class="auto-mileage"><td>Semester:</td><td><%= event.semester %></td></tr>
+          <tr class="auto-engine"><td>Event Name:</td><td><%= event.event_name %></td></tr>
+          <tr class="auto-drivetrain"><td>Place:</td><td><%= event.place %></td></tr>
+        </table>
+      </div>
+      <div class="auto-info col-sm-6">
+        <table class="table table-striped col-lg-6">
+            <tr class="auto-transmission"><td>Time:</td><td><%= event.time %></td></tr>
+        </table>
+
+        <% if  not current_user.blank?%>
+            <%if current_user.admin? %>
+        <%= link_to 'Delete This Event', event_path(event),
+                    method: :delete, data: { confirm: 'Are you sure to delete this event?'}%>
+                <% end %>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
+
+  <% if  not current_user.blank?%>
+  <%if current_user.admin? %>
+  <%= link_to 'Add Event', new_event_path %>
+      <% end %>
+  <% end %>
+  <br />
+</div>

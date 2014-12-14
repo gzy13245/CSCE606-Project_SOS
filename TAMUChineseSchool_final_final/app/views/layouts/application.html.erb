@@ -5,7 +5,13 @@
     <title><%= content_for?(:title) ? yield(:title) : "TAMU Chinese School" %></title>
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "TAMU Chinese School" %>">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= stylesheet_link_tag 'framework', 'data-turbolinks-track' => true %> 
+    <%= stylesheet_link_tag 'index', 'data-turbolinks-track' => true %>    
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'jquery.min', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'jquery.slidepanel.setup', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'jquery.tabs.setup', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'jquery.ui.min', 'data-turbolinks-track' => true %>
     <%= csrf_meta_tags %>
   </head>
   <body>
