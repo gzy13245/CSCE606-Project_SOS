@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="row">
+
+
+    <br><br>
+
+    <div class="column">
+      <table class="table">
+        <tr>
+          <th>Child_Name</th>
+          <th>Course_Name</th>
+          <th><%= @taking_courses.length%></th>
+        </tr>
+
+        <% @taking_courses.each do |tc| %>
+            <tr>
+
+
+              <td><%= @children.find_by_id(tc.child_id).name %></td>
+              <td><%= @courses.find_by_id(1).name%></td>
+
+
+
+
+            </tr>
+        <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+

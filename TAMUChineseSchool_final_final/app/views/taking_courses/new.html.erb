@@ -1,17 +1,18 @@
+<div class="taking_courseform">
 <%= form_for :taking_course , url: taking_courses_path do |f| %>
-    <table>
+      <h3>Class registration</h3>
 
-      <tr>
-        <td><%= f.label :user %></td>
+      <div class="form-group">
+      <%= f.label :child_id, 'Child\'s name' %>
+        <%= f.select :child_id, @children.map {|r| [r.name,r.id] } %>
 
-        <td> <%= f.select :user_id, @users.map {|r| [r.fullname,r.id] } %></td>
+      </div>
+      <div class="form-group">
+        <%= f.label :course_id, 'Course name' %>
+        <%= f.select :course_id, @courses.map {|r| [r.name,r.id] } %>
+      </div>
 
-      </tr>
-
-    </table>
-
-    <p>
-      <%= f.submit value="Add Teacher" %>
-    </p>
-
+      <%= f.submit 'Register', :class => 'button right' %>
 <% end %>
+</div>
+

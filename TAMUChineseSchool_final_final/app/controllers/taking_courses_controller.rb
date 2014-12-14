@@ -3,42 +3,43 @@ class TakingCoursesController < ApplicationController
   #after_action :verify_authorized
 
   def new
+    @curr_user = current_user
+    @courses=Course.all
+
+
+
+
+    @family = current_user.family
+    @children = @family.children
 
   end
 
   def create
     @curr_user = current_user
+    @courses=Course.all
+
 
     cur_params = secure_params
 
     @family = current_user.family
-    if @family == nil
-      @family = Family.new(user_id: @curr_user.id)
-      @family.save
-    end
+    @children = @family.children
 
-    if cur_params[:name] != nil
-      @child = Child.new(cur_params.merge({family_id: @family.id}))
-      @child.save
-    end
+    if @children.blank?
+      redirect_to new_family_path, :alert => "Please add child(ren) first."
+    else
 
+      @taking_course = TakingCourse.new(cur_params)
+      @taking_course.save
+   #   redirect_to taking_courses_path
     redirect_to @family
+      end
   end
 
   def index
-#    @users = User.all
-#    authorize User
-
-    @family = current_user.family
-    @children = nil
-    if(@family != nil)
-      @children = @family.children
-    end
-
-    @taking_courses = nil
-    if @children != nil
-      @taking_courses = TakingCourse.find_by(@children)
-    end
+   # @taking_courses=TakingCourse.all
+   # @children=Child.all
+   # @courses=Course.all
+    redirect_to families_path
   end
 
   def show
@@ -72,6 +73,6 @@ class TakingCoursesController < ApplicationController
   private
 
   def secure_params
-    params.require(:family).permit!
+    params.require(:taking_course).permit(:child_id,:course_id)
   end
 end

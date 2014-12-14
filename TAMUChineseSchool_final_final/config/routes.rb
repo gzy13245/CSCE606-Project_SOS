@@ -7,4 +7,6 @@ Rails.application.routes.draw do
   devise_for :courses
   resources :families
   resources :courses
+
+  resources :taking_courses
 end

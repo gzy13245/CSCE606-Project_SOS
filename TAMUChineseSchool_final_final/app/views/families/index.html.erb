@@ -8,6 +8,7 @@
     <th>Name</th>
     <th>Chinese Name</th>
     <th>Gender</th>
+    <th>Course Taking</th>
   </tr>
 
   <% if @children != nil %>
@@ -17,8 +18,15 @@
             <td><%= child.name_chn %></td>
             <td><%= child.gender %></td>
 
+            <% @courses=child.courses.map{|r| r.name}%>
+            <% if @courses != nil %>
+                <td><%= @courses.join(",") %></td>
+            <% end %>
+
+
             <td><%= link_to 'Delete', family_path(child),
                             method: :delete, data: { confirm: 'Are you sure to delete?'}%></td>
+
 
         </tr>
     <% end %>

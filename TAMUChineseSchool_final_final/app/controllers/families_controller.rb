@@ -34,6 +34,8 @@ class FamiliesController < ApplicationController
     if(@family != nil)
       @children = @family.children
     end
+
+    @TakingCourses =TakingCourse.all #@children.map{|r| TakingCourse.find_by_child_id(r.id) };
   end
 
   def show
