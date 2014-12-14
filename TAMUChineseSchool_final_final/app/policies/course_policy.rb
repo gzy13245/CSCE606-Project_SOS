@@ -1,4 +1,4 @@
-class CoursePolicy < ApplicationPolicy
+class CoursePolicy #< ApplicationPolicy
   attr_reader :user, :course
 
   def initialize(user, course)
@@ -7,15 +7,15 @@ class CoursePolicy < ApplicationPolicy
   end
 
   def new?
-    @user.admin? or @user == @user
+    @user.admin?
   end
 
   def create?
-    @user.admin? or @user == @user
+    @user.admin?
   end
 
   def show?
-    @user.admin? or @user == @user
+    @user.admin?
   end
 
   def update?

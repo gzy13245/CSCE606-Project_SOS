@@ -42,7 +42,6 @@
 
         <% if  not current_user.blank?%>
             <%if current_user.admin? %>
-        <td><%= link_to 'Show', course_path(course) %></td>
         <td><%= link_to 'Delete', course_path(course),
                         method: :delete, data: { confirm: 'Are you sure to delete?'}%></td>
             <% end %>
