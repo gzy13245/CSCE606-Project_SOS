@@ -1,0 +1,49 @@
+<div class="container">
+  <div class="row">
+<h1>Listing all courses</h1>
+
+<%= link_to 'New course', new_course_path %>
+<br><br>
+
+    <div class="column">
+      <table class="table">
+  <tr>
+    <th>Year</th>
+    <th>Date</th>
+    <th>Time</th>
+
+
+    <th>Name</th>
+    <th>Classroom</th>
+
+    <th>Textbook</th>
+    <th>Teacher</th>
+    <th>Description</th>
+  </tr>
+
+  <% @courses.each do |course| %>
+      <tr>
+        <td><%= course.year.strftime("%Y") %> <%= course.semester %></td>
+        <td><%= course.start_time.strftime("%m/%d") %> - <%= course.end_time.strftime("%m/%d") %></td>
+        <td><%= course.start_time.strftime("%H:%M") %> - <%= course.end_time.strftime("%H:%M") %></td>
+
+
+        <td><%= course.name %></td>
+        <td><%= course.class_room %></td>
+
+        <td><%= course.textbook %></td>
+        <td><%= @teachers.find(course.user_id).name %></td>
+        <td><%= course.course_discription %></td>
+
+        <td><%= link_to 'Show', course_path(course) %></td>
+        <td><%= link_to 'Delete', course_path(course),
+                        method: :delete, data: { confirm: 'Are you sure to delete?'}%></td>
+
+      </tr>
+  <% end %>
+        </tbody>
+</table>
+    </div>
+  </div>
+</div>
+

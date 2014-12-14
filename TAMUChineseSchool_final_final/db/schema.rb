@@ -12,25 +12,21 @@
 # It's strongly recommended that you check this file into your version control system.
 
 ActiveRecord::Schema.define(version: 20141213190052) do
+ActiveRecord::Schema.define(version: 20141214030036) do
 
-  create_table "children", force: true do |t|
+  create_table "courses", force: true do |t|
     t.string   "name"
-    t.string   "name_chn"
-    t.string   "gender"
-    t.integer  "family_id"
+    t.datetime "year"
+    t.string   "semester"
+    t.string   "class_room"
+    t.datetime "start_time"
+    t.datetime "end_time"
+    t.string   "textbook"
+    t.string   "user_id"
+    t.string   "course_discription"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
-
-  add_index "children", ["family_id"], name: "index_children_on_family_id"
-
-  create_table "families", force: true do |t|
-    t.integer  "user_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "families", ["user_id"], name: "index_families_on_user_id"
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
