@@ -2942,3 +2942,1520 @@ Processing by Devise::RegistrationsController#edit as HTML
   Rendered layouts/_navigation.html.erb (7.9ms)
   Rendered layouts/_messages.html.erb (0.7ms)
 Completed 200 OK in 1311ms (Views: 1295.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/edit" for 127.0.0.1 at 2014-12-14 13:59:23 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError - 
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+:
+  activerecord (4.1.8) lib/active_record/migration.rb:389:in `check_pending!'
+  activerecord (4.1.8) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.3) lib/quiet_assets.rb:23:in `call_with_quiet_assets'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/da79ce208cb57383/variables" for 127.0.0.1 at 2014-12-14 13:59:23 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-14 13:59:44 +0800
+  [1m[35mActiveRecord::SchemaMigration Load (0.7ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+ActiveRecord::PendingMigrationError - 
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rake db:migrate RAILS_ENV=development
+
+:
+  activerecord (4.1.8) lib/active_record/migration.rb:389:in `check_pending!'
+  activerecord (4.1.8) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.3) lib/quiet_assets.rb:23:in `call_with_quiet_assets'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/89d678dd7cc88cf1/variables" for 127.0.0.1 at 2014-12-14 13:59:44 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateFamilies (20141213183610)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mCREATE TABLE "families" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "user_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.4ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mCREATE  INDEX "index_families_on_user_id" ON "families" ("user_id")[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141213183610"]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Migrating to CreateChildren (20141213190052)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "children" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "name_chn" varchar(255), "gender" varchar(255), "family_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  CREATE  INDEX "index_children_on_family_id" ON "children" ("family_id")
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20141213190052"]]
+  [1m[35m (0.8ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_children_on_family_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_children_on_family_id' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_families_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_families_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-14 14:00:02 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by VisitorsController#index as HTML
+  [1m[35m (0.8ms)[0m  SELECT COUNT(*) FROM "users"
+  Rendered visitors/index.html.erb within layouts/application (28.0ms)
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered layouts/_navigation_links.html.erb (86.8ms)
+  Rendered layouts/_navigation.html.erb (95.4ms)
+  Rendered layouts/_messages.html.erb (3.1ms)
+Completed 200 OK in 3335ms (Views: 3313.5ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-12-14 14:00:06 +0800
+Processing by VisitorsController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "users"
+  Rendered visitors/index.html.erb within layouts/application (9.4ms)
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered layouts/_navigation_links.html.erb (12.5ms)
+  Rendered layouts/_navigation.html.erb (16.2ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 1592ms (Views: 1586.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/families" for 127.0.0.1 at 2014-12-14 14:00:18 +0800
+
+ActionController::RoutingError (No route matches [GET] "/families"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.3) lib/quiet_assets.rb:23:in `call_with_quiet_assets'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (17.8ms)
+  Rendered /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (55.1ms)
+  Rendered /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (11.7ms)
+  Rendered /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (11.4ms)
+  Rendered /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (363.2ms)
+
+
+Started GET "/family" for 127.0.0.1 at 2014-12-14 14:00:23 +0800
+
+ActionController::RoutingError (No route matches [GET] "/family"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.3) lib/quiet_assets.rb:23:in `call_with_quiet_assets'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.9ms)
+  Rendered /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (43.0ms)
+  Rendered /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (23.2ms)
+  Rendered /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.1ms)
+  Rendered /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (316.9ms)
+
+
+Started GET "/family" for 127.0.0.1 at 2014-12-14 14:00:48 +0800
+
+ActionController::RoutingError (No route matches [GET] "/family"):
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.3) lib/quiet_assets.rb:23:in `call_with_quiet_assets'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.6ms)
+  Rendered /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (55.0ms)
+  Rendered /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_route.html.erb (24.8ms)
+  Rendered /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.1ms)
+  Rendered /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.8/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (414.9ms)
+
+
+Started GET "/families" for 127.0.0.1 at 2014-12-14 14:00:54 +0800
+Processing by FamiliesController#index as HTML
+Completed 404 Not Found in 33ms
+
+ActiveRecord::RecordNotFound - Couldn't find Family without an ID:
+  activerecord (4.1.8) lib/active_record/relation/finder_methods.rb:411:in `find_with_ids'
+  activerecord (4.1.8) lib/active_record/relation/finder_methods.rb:68:in `find'
+  activerecord (4.1.8) lib/active_record/querying.rb:3:in `find'
+  app/controllers/families_controller.rb:33:in `index'
+  actionpack (4.1.8) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.8) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.3) lib/quiet_assets.rb:23:in `call_with_quiet_assets'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/519857c32bd3e231/variables" for 127.0.0.1 at 2014-12-14 14:00:54 +0800
+
+
+Started POST "/__better_errors/519857c32bd3e231/eval" for 127.0.0.1 at 2014-12-14 14:01:38 +0800
+  [1m[35mFamily Load (0.8ms)[0m  SELECT "families".* FROM "families"
+
+
+Started POST "/__better_errors/519857c32bd3e231/eval" for 127.0.0.1 at 2014-12-14 14:03:27 +0800
+
+
+Started POST "/__better_errors/519857c32bd3e231/eval" for 127.0.0.1 at 2014-12-14 14:03:32 +0800
+
+
+Started POST "/__better_errors/519857c32bd3e231/eval" for 127.0.0.1 at 2014-12-14 14:03:44 +0800
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+
+
+Started POST "/__better_errors/519857c32bd3e231/eval" for 127.0.0.1 at 2014-12-14 14:05:35 +0800
+
+
+Started POST "/__better_errors/519857c32bd3e231/eval" for 127.0.0.1 at 2014-12-14 14:05:41 +0800
+  [1m[35mFamily Load (0.8ms)[0m  SELECT "families".* FROM "families"  WHERE "families"."user_id" = ?  [["user_id", 1]]
+
+
+Started GET "/families" for 127.0.0.1 at 2014-12-14 14:07:17 +0800
+Processing by FamiliesController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 404 Not Found in 113ms
+
+ActiveRecord::RecordNotFound - Couldn't find Family without an ID:
+  activerecord (4.1.8) lib/active_record/relation/finder_methods.rb:411:in `find_with_ids'
+  activerecord (4.1.8) lib/active_record/relation/finder_methods.rb:68:in `find'
+  activerecord (4.1.8) lib/active_record/querying.rb:3:in `find'
+  app/controllers/families_controller.rb:35:in `index'
+  actionpack (4.1.8) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.8) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.3) lib/quiet_assets.rb:23:in `call_with_quiet_assets'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/1f47b42e92fc6351/variables" for 127.0.0.1 at 2014-12-14 14:07:19 +0800
+
+
+Started POST "/__better_errors/1f47b42e92fc6351/eval" for 127.0.0.1 at 2014-12-14 14:07:25 +0800
+  [1m[35mFamily Load (0.8ms)[0m  SELECT  "families".* FROM "families"  WHERE "families"."user_id" = ? LIMIT 1  [["user_id", 1]]
+
+
+Started GET "/families" for 127.0.0.1 at 2014-12-14 14:08:24 +0800
+Processing by FamiliesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mFamily Load (0.7ms)[0m  SELECT  "families".* FROM "families"  WHERE "families"."user_id" = ? LIMIT 1  [["user_id", 1]]
+  Rendered families/index.html.erb within layouts/application (30.1ms)
+Completed 500 Internal Server Error in 166ms
+
+NoMethodError - undefined method `each' for nil:NilClass:
+  app/views/families/index.html.erb:12:in `_app_views_families_index_html_erb__2666301036119471992_70285226210280'
+  actionview (4.1.8) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.1.8) lib/active_support/notifications.rb:161:in `instrument'
+  actionview (4.1.8) lib/action_view/template.rb:339:in `instrument'
+  actionview (4.1.8) lib/action_view/template.rb:143:in `render'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:55:in `block (2 levels) in render_template'
+  actionview (4.1.8) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `instrument'
+  actionview (4.1.8) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:54:in `block in render_template'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:62:in `render_with_layout'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:53:in `render_template'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionview (4.1.8) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.8) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.8) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.8) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.8) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.8) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.8) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.8) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.1.8) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.8) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.8) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.3) lib/quiet_assets.rb:23:in `call_with_quiet_assets'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/2b3a941b46798c2a/variables" for 127.0.0.1 at 2014-12-14 14:08:25 +0800
+
+
+Started POST "/__better_errors/2b3a941b46798c2a/eval" for 127.0.0.1 at 2014-12-14 14:08:31 +0800
+
+
+Started POST "/__better_errors/2b3a941b46798c2a/eval" for 127.0.0.1 at 2014-12-14 14:08:37 +0800
+
+
+Started GET "/families" for 127.0.0.1 at 2014-12-14 14:11:20 +0800
+Processing by FamiliesController#index as HTML
+  [1m[36mUser Load (7.5ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mFamily Load (0.5ms)[0m  SELECT  "families".* FROM "families"  WHERE "families"."user_id" = ? LIMIT 1  [["user_id", 1]]
+  Rendered families/index.html.erb within layouts/application (2.7ms)
+  Rendered layouts/_navigation_links.html.erb (12.4ms)
+  Rendered layouts/_navigation.html.erb (17.0ms)
+  Rendered layouts/_messages.html.erb (1.7ms)
+Completed 200 OK in 1599ms (Views: 1570.6ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/families/new" for 127.0.0.1 at 2014-12-14 14:11:55 +0800
+Processing by FamiliesController#new as HTML
+  Rendered families/new.html.erb within layouts/application (51.2ms)
+Completed 500 Internal Server Error in 69ms
+
+NameError - undefined local variable or method `resource' for #<#<Class:0x007fd9216d8b50>:0x007fd9214c88b0>:
+  app/views/families/new.html.erb:2:in `_app_views_families_new_html_erb__613981510551548366_70285271531760'
+  actionview (4.1.8) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.1.8) lib/active_support/notifications.rb:161:in `instrument'
+  actionview (4.1.8) lib/action_view/template.rb:339:in `instrument'
+  actionview (4.1.8) lib/action_view/template.rb:143:in `render'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:55:in `block (2 levels) in render_template'
+  actionview (4.1.8) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `instrument'
+  actionview (4.1.8) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:54:in `block in render_template'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:62:in `render_with_layout'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:53:in `render_template'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionview (4.1.8) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.8) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.8) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.8) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.8) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.8) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.8) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.8) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.1.8) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.8) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.8) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.3) lib/quiet_assets.rb:23:in `call_with_quiet_assets'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/28c84d15e17958d0/variables" for 127.0.0.1 at 2014-12-14 14:11:55 +0800
+
+
+Started GET "/families/new" for 127.0.0.1 at 2014-12-14 14:17:54 +0800
+Processing by FamiliesController#new as HTML
+  Rendered families/new.html.erb within layouts/application (42.8ms)
+Completed 500 Internal Server Error in 57ms
+
+NameError - undefined local variable or method `resource' for #<#<Class:0x007fd9216d8b50>:0x007fd9214a15a8>:
+  devise (3.4.1) app/helpers/devise_helper.rb:9:in `devise_error_messages!'
+  app/views/families/new.html.erb:4:in `block in _app_views_families_new_html_erb__613981510551548366_70285271456160'
+  actionview (4.1.8) lib/action_view/helpers/capture_helper.rb:38:in `block in capture'
+  actionview (4.1.8) lib/action_view/helpers/capture_helper.rb:200:in `with_output_buffer'
+  haml (4.0.6) lib/haml/helpers/action_view_xss_mods.rb:5:in `with_output_buffer_with_haml_xss'
+  actionview (4.1.8) lib/action_view/helpers/capture_helper.rb:38:in `capture'
+  haml (4.0.6) lib/haml/helpers/action_view_mods.rb:52:in `capture_with_haml'
+  actionview (4.1.8) lib/action_view/helpers/form_helper.rb:434:in `form_for'
+  haml (4.0.6) lib/haml/helpers/action_view_mods.rb:139:in `form_for_with_haml'
+  haml (4.0.6) lib/haml/helpers/action_view_xss_mods.rb:28:in `form_for_with_haml_xss'
+  app/views/families/new.html.erb:2:in `_app_views_families_new_html_erb__613981510551548366_70285271456160'
+  actionview (4.1.8) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.1.8) lib/active_support/notifications.rb:161:in `instrument'
+  actionview (4.1.8) lib/action_view/template.rb:339:in `instrument'
+  actionview (4.1.8) lib/action_view/template.rb:143:in `render'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:55:in `block (2 levels) in render_template'
+  actionview (4.1.8) lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `instrument'
+  actionview (4.1.8) lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:54:in `block in render_template'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:62:in `render_with_layout'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:53:in `render_template'
+  actionview (4.1.8) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionview (4.1.8) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.1.8) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.1.8) lib/action_view/rendering.rb:99:in `_render_template'
+  actionpack (4.1.8) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.1.8) lib/action_view/rendering.rb:82:in `render_to_body'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.1.8) lib/action_controller/metal/renderers.rb:32:in `render_to_body'
+  actionpack (4.1.8) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.1.8) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/2.1.0/benchmark.rb:294:in `realtime'
+  activesupport (4.1.8) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.1.8) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.1.8) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.8) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.3) lib/quiet_assets.rb:23:in `call_with_quiet_assets'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/463e0b1ddbe89a58/variables" for 127.0.0.1 at 2014-12-14 14:17:54 +0800
+
+
+Started GET "/families/new" for 127.0.0.1 at 2014-12-14 14:18:11 +0800
+Processing by FamiliesController#new as HTML
+  Rendered families/new.html.erb within layouts/application (7013.4ms)
+  [1m[36mUser Load (1.4ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered layouts/_navigation_links.html.erb (15.8ms)
+  Rendered layouts/_navigation.html.erb (21.4ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 8445ms (Views: 8438.2ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/families" for 127.0.0.1 at 2014-12-14 14:18:26 +0800
+Processing by FamiliesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6huPUvqEgY104sqWrQBeMUf21DU+dcKK9EEJ0ATivH4=", "family"=>{"name1"=>"", "name1_chn"=>"", "gender1"=>"Male", "name2"=>"", "name_chn2"=>"", "gender2"=>"Male", "name3"=>"", "name_chn3"=>"", "gender3"=>"Male"}, "commit"=>"Add children"}
+  [1m[35mUser Load (1.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+Completed 400 Bad Request in 28ms
+
+ActionController::ParameterMissing - param is missing or the value is empty: families:
+  actionpack (4.1.8) lib/action_controller/metal/strong_parameters.rb:187:in `require'
+  app/controllers/families_controller.rb:67:in `secure_params'
+  app/controllers/families_controller.rb:12:in `create'
+  actionpack (4.1.8) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.8) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.3) lib/quiet_assets.rb:23:in `call_with_quiet_assets'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/b9b4becd4648e641/variables" for 127.0.0.1 at 2014-12-14 14:18:26 +0800
+
+
+Started POST "/families" for 127.0.0.1 at 2014-12-14 14:18:40 +0800
+Processing by FamiliesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6huPUvqEgY104sqWrQBeMUf21DU+dcKK9EEJ0ATivH4=", "family"=>{"name1"=>"fewfew", "name1_chn"=>"faewfewa", "gender1"=>"Male", "name2"=>"", "name_chn2"=>"", "gender2"=>"Male", "name3"=>"", "name_chn3"=>"", "gender3"=>"Male"}, "commit"=>"Add children"}
+  [1m[36mUser Load (2.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+Completed 400 Bad Request in 25ms
+
+ActionController::ParameterMissing - param is missing or the value is empty: families:
+  actionpack (4.1.8) lib/action_controller/metal/strong_parameters.rb:187:in `require'
+  app/controllers/families_controller.rb:67:in `secure_params'
+  app/controllers/families_controller.rb:12:in `create'
+  actionpack (4.1.8) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.8) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.8) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.8) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.8) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.8) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.8) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.8) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.8) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.8) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.8) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.8) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.8) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.8) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.8) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.8) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.8) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.8) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.8) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.8) lib/rails/rack/logger.rb:20:in `call'
+  quiet_assets (1.0.3) lib/quiet_assets.rb:23:in `call_with_quiet_assets'
+  actionpack (4.1.8) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.8) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.8) lib/action_dispatch/middleware/static.rb:84:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.8) lib/rails/engine.rb:514:in `call'
+  railties (4.1.8) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/stzpz/.rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/dada0d86569bea8f/variables" for 127.0.0.1 at 2014-12-14 14:18:40 +0800
+
+
+Started POST "/__better_errors/dada0d86569bea8f/eval" for 127.0.0.1 at 2014-12-14 14:18:49 +0800
+
+
+Started POST "/__better_errors/dada0d86569bea8f/eval" for 127.0.0.1 at 2014-12-14 14:18:51 +0800
+
+
+Started POST "/__better_errors/dada0d86569bea8f/eval" for 127.0.0.1 at 2014-12-14 14:18:56 +0800
+
+
+Started POST "/__better_errors/dada0d86569bea8f/eval" for 127.0.0.1 at 2014-12-14 14:18:58 +0800
+
+
+Started POST "/__better_errors/dada0d86569bea8f/eval" for 127.0.0.1 at 2014-12-14 14:19:00 +0800
+
+
+Started POST "/__better_errors/dada0d86569bea8f/eval" for 127.0.0.1 at 2014-12-14 14:19:02 +0800
+
+
+Started POST "/__better_errors/dada0d86569bea8f/eval" for 127.0.0.1 at 2014-12-14 14:19:39 +0800
+
+
+Started POST "/families" for 127.0.0.1 at 2014-12-14 14:20:09 +0800
+Processing by FamiliesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6huPUvqEgY104sqWrQBeMUf21DU+dcKK9EEJ0ATivH4=", "family"=>{"name1"=>"fewfew", "name1_chn"=>"faewfewa", "gender1"=>"Male", "name2"=>"", "name_chn2"=>"", "gender2"=>"Male", "name3"=>"", "name_chn3"=>"", "gender3"=>"Male"}, "commit"=>"Add children"}
+  [1m[35mUser Load (1.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "families" ("created_at", "updated_at", "user_id") VALUES (?, ?, ?)  [["created_at", "2014-12-14 06:20:10.208973"], ["updated_at", "2014-12-14 06:20:10.208973"], ["user_id", 1]]
+  [1m[36m (8.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.5ms)[0m  begin transaction
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "children" ("created_at", "family_id", "gender", "name", "name_chn", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-14 06:20:10.272664"], ["family_id", 1], ["gender", "Male"], ["name", "fewfew"], ["name_chn", "faewfewa"], ["updated_at", "2014-12-14 06:20:10.272664"]]
+  [1m[35m (1.4ms)[0m  commit transaction
+Redirected to http://0.0.0.0:3000/families/1
+Completed 302 Found in 206ms (ActiveRecord: 20.9ms)
+
+
+Started GET "/families/1" for 127.0.0.1 at 2014-12-14 14:20:10 +0800
+Processing by FamiliesController#show as HTML
+  Parameters: {"id"=>"1"}
+Redirected to http://0.0.0.0:3000/families
+Completed 302 Found in 17ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/families" for 127.0.0.1 at 2014-12-14 14:20:10 +0800
+Processing by FamiliesController#index as HTML
+  [1m[36mUser Load (13.7ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mFamily Load (0.6ms)[0m  SELECT  "families".* FROM "families"  WHERE "families"."user_id" = ? LIMIT 1  [["user_id", 1]]
+  [1m[36mChild Load (0.9ms)[0m  [1mSELECT "children".* FROM "children"  WHERE "children"."family_id" = ?[0m  [["family_id", 1]]
+  Rendered families/index.html.erb within layouts/application (22.9ms)
+  Rendered layouts/_navigation_links.html.erb (4.0ms)
+  Rendered layouts/_navigation.html.erb (9.7ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 1544ms (Views: 1464.4ms | ActiveRecord: 15.2ms)
+
+
+Started GET "/families/new" for 127.0.0.1 at 2014-12-14 14:20:15 +0800
+Processing by FamiliesController#new as HTML
+  Rendered families/new.html.erb within layouts/application (32.6ms)
+  [1m[35mUser Load (1.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/_navigation_links.html.erb (13.3ms)
+  Rendered layouts/_navigation.html.erb (17.1ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 1515ms (Views: 1507.9ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/families" for 127.0.0.1 at 2014-12-14 14:20:21 +0800
+Processing by FamiliesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6huPUvqEgY104sqWrQBeMUf21DU+dcKK9EEJ0ATivH4=", "family"=>{"name1"=>"faewf", "name1_chn"=>"faewfe", "gender1"=>"Male", "name2"=>"", "name_chn2"=>"", "gender2"=>"Male", "name3"=>"", "name_chn3"=>"", "gender3"=>"Male"}, "commit"=>"Add children"}
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35m (0.5ms)[0m  begin transaction
+  [1m[36mSQL (0.9ms)[0m  [1mINSERT INTO "families" ("created_at", "updated_at", "user_id") VALUES (?, ?, ?)[0m  [["created_at", "2014-12-14 06:20:21.769311"], ["updated_at", "2014-12-14 06:20:21.769311"], ["user_id", 1]]
+  [1m[35m (1.5ms)[0m  commit transaction
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "children" ("created_at", "family_id", "gender", "name", "name_chn", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", "2014-12-14 06:20:21.791307"], ["family_id", 2], ["gender", "Male"], ["name", "faewf"], ["name_chn", "faewfe"], ["updated_at", "2014-12-14 06:20:21.791307"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/families/2
+Completed 302 Found in 60ms (ActiveRecord: 6.1ms)
+
+
+Started GET "/families/2" for 127.0.0.1 at 2014-12-14 14:20:21 +0800
+Processing by FamiliesController#show as HTML
+  Parameters: {"id"=>"2"}
+Redirected to http://0.0.0.0:3000/families
+Completed 302 Found in 12ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/families" for 127.0.0.1 at 2014-12-14 14:20:21 +0800
+Processing by FamiliesController#index as HTML
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mFamily Load (0.4ms)[0m  [1mSELECT  "families".* FROM "families"  WHERE "families"."user_id" = ? LIMIT 1[0m  [["user_id", 1]]
+  [1m[35mChild Load (0.5ms)[0m  SELECT "children".* FROM "children"  WHERE "children"."family_id" = ?  [["family_id", 1]]
+  Rendered families/index.html.erb within layouts/application (8.1ms)
+  Rendered layouts/_navigation_links.html.erb (3.2ms)
+  Rendered layouts/_navigation.html.erb (7.2ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 1519ms (Views: 1478.5ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/families/new" for 127.0.0.1 at 2014-12-14 14:20:28 +0800
+Processing by FamiliesController#new as HTML
+  Rendered families/new.html.erb within layouts/application (34.2ms)
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered layouts/_navigation_links.html.erb (12.9ms)
+  Rendered layouts/_navigation.html.erb (16.6ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 1547ms (Views: 1542.1ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/families" for 127.0.0.1 at 2014-12-14 14:20:43 +0800
+Processing by FamiliesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6huPUvqEgY104sqWrQBeMUf21DU+dcKK9EEJ0ATivH4=", "family"=>{"name1"=>"fawe", "name1_chn"=>"fwfew", "gender1"=>"Male", "name2"=>"fewfew", "name_chn2"=>"fewfew", "gender2"=>"Female", "name3"=>"fewfew", "name_chn3"=>"few", "gender3"=>"Male"}, "commit"=>"Add children"}
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "families" ("created_at", "updated_at", "user_id") VALUES (?, ?, ?)  [["created_at", "2014-12-14 06:20:43.102728"], ["updated_at", "2014-12-14 06:20:43.102728"], ["user_id", 1]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.5ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "children" ("created_at", "family_id", "gender", "name", "name_chn", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-14 06:20:43.123297"], ["family_id", 3], ["gender", "Male"], ["name", "fawe"], ["name_chn", "fwfew"], ["updated_at", "2014-12-14 06:20:43.123297"]]
+  [1m[35m (1.1ms)[0m  commit transaction
+Redirected to http://0.0.0.0:3000/families/3
+Completed 302 Found in 63ms (ActiveRecord: 5.4ms)
+
+
+Started GET "/families/3" for 127.0.0.1 at 2014-12-14 14:20:43 +0800
+Processing by FamiliesController#show as HTML
+  Parameters: {"id"=>"3"}
+Redirected to http://0.0.0.0:3000/families
+Completed 302 Found in 12ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/families" for 127.0.0.1 at 2014-12-14 14:20:43 +0800
+Processing by FamiliesController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mFamily Load (0.6ms)[0m  SELECT  "families".* FROM "families"  WHERE "families"."user_id" = ? LIMIT 1  [["user_id", 1]]
+  [1m[36mChild Load (0.5ms)[0m  [1mSELECT "children".* FROM "children"  WHERE "children"."family_id" = ?[0m  [["family_id", 1]]
+  Rendered families/index.html.erb within layouts/application (9.3ms)
+  Rendered layouts/_navigation_links.html.erb (3.4ms)
+  Rendered layouts/_navigation.html.erb (7.8ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 1496ms (Views: 1465.0ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/families" for 127.0.0.1 at 2014-12-14 14:20:56 +0800
+Processing by FamiliesController#index as HTML
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mFamily Load (0.4ms)[0m  [1mSELECT  "families".* FROM "families"  WHERE "families"."user_id" = ? LIMIT 1[0m  [["user_id", 1]]
+  [1m[35mChild Load (0.4ms)[0m  SELECT "children".* FROM "children"  WHERE "children"."family_id" = ?  [["family_id", 1]]
+  Rendered families/index.html.erb within layouts/application (9.2ms)
+  Rendered layouts/_navigation_links.html.erb (3.9ms)
+  Rendered layouts/_navigation.html.erb (8.1ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 1491ms (Views: 1461.7ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/families" for 127.0.0.1 at 2014-12-14 14:29:09 +0800
+Processing by FamiliesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mFamily Load (1.1ms)[0m  SELECT  "families".* FROM "families"  WHERE "families"."user_id" = ? LIMIT 1  [["user_id", 1]]
+  [1m[36mChild Load (1.3ms)[0m  [1mSELECT "children".* FROM "children"  WHERE "children"."family_id" = ?[0m  [["family_id", 1]]
+  Rendered families/index.html.erb within layouts/application (46.4ms)
+  Rendered layouts/_navigation_links.html.erb (3.9ms)
+  Rendered layouts/_navigation.html.erb (9.8ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 1660ms (Views: 1491.0ms | ActiveRecord: 9.9ms)
+
+
+Started GET "/families/new" for 127.0.0.1 at 2014-12-14 14:29:41 +0800
+Processing by FamiliesController#new as HTML
+  Rendered families/new.html.erb within layouts/application (18.2ms)
+  [1m[35mUser Load (1.1ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/_navigation_links.html.erb (13.5ms)
+  Rendered layouts/_navigation.html.erb (18.3ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 1530ms (Views: 1522.0ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/families" for 127.0.0.1 at 2014-12-14 14:30:03 +0800
+Processing by FamiliesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6huPUvqEgY104sqWrQBeMUf21DU+dcKK9EEJ0ATivH4=", "family"=>{"name"=>"oigawevmgaew", "name_chn"=>"fw2fwf32", "gender"=>"Female"}, "commit"=>"Add child"}
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mFamily Load (0.7ms)[0m  SELECT  "families".* FROM "families"  WHERE "families"."user_id" = ? LIMIT 1  [["user_id", 1]]
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "children" ("created_at", "family_id", "gender", "name", "name_chn", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", "2014-12-14 06:30:03.919020"], ["family_id", 1], ["gender", "Female"], ["name", "oigawevmgaew"], ["name_chn", "fw2fwf32"], ["updated_at", "2014-12-14 06:30:03.919020"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/families/1
+Completed 302 Found in 66ms (ActiveRecord: 4.2ms)
+
+
+Started GET "/families/1" for 127.0.0.1 at 2014-12-14 14:30:03 +0800
+Processing by FamiliesController#show as HTML
+  Parameters: {"id"=>"1"}
+Redirected to http://0.0.0.0:3000/families
+Completed 302 Found in 18ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/families" for 127.0.0.1 at 2014-12-14 14:30:04 +0800
+Processing by FamiliesController#index as HTML
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mFamily Load (0.4ms)[0m  [1mSELECT  "families".* FROM "families"  WHERE "families"."user_id" = ? LIMIT 1[0m  [["user_id", 1]]
+  [1m[35mChild Load (0.4ms)[0m  SELECT "children".* FROM "children"  WHERE "children"."family_id" = ?  [["family_id", 1]]
+  Rendered families/index.html.erb within layouts/application (9.9ms)
+  Rendered layouts/_navigation_links.html.erb (3.7ms)
+  Rendered layouts/_navigation.html.erb (8.9ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 1457ms (Views: 1430.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/families" for 127.0.0.1 at 2014-12-14 14:38:40 +0800
+Processing by FamiliesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mFamily Load (0.8ms)[0m  SELECT  "families".* FROM "families"  WHERE "families"."user_id" = ? LIMIT 1  [["user_id", 1]]
+  [1m[36mChild Load (0.9ms)[0m  [1mSELECT "children".* FROM "children"  WHERE "children"."family_id" = ?[0m  [["family_id", 1]]
+  Rendered families/index.html.erb within layouts/application (55.4ms)
+  Rendered layouts/_navigation_links.html.erb (3.7ms)
+  Rendered layouts/_navigation.html.erb (7.7ms)
+  Rendered layouts/_messages.html.erb (1.7ms)
+Completed 200 OK in 1714ms (Views: 1530.8ms | ActiveRecord: 9.8ms)
+
+
+Started DELETE "/families/1" for 127.0.0.1 at 2014-12-14 14:38:48 +0800
+Processing by FamiliesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"6huPUvqEgY104sqWrQBeMUf21DU+dcKK9EEJ0ATivH4=", "id"=>"1"}
+  [1m[35mChild Load (0.9ms)[0m  SELECT  "children".* FROM "children"  WHERE "children"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  DELETE FROM "children" WHERE "children"."id" = ?  [["id", 1]]
+  [1m[36m (9.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/families
+Completed 302 Found in 50ms (ActiveRecord: 11.3ms)
+
+
+Started GET "/families" for 127.0.0.1 at 2014-12-14 14:38:48 +0800
+Processing by FamiliesController#index as HTML
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mFamily Load (0.4ms)[0m  [1mSELECT  "families".* FROM "families"  WHERE "families"."user_id" = ? LIMIT 1[0m  [["user_id", 1]]
+  [1m[35mChild Load (0.6ms)[0m  SELECT "children".* FROM "children"  WHERE "children"."family_id" = ?  [["family_id", 1]]
+  Rendered families/index.html.erb within layouts/application (11.7ms)
+  Rendered layouts/_navigation_links.html.erb (3.2ms)
+  Rendered layouts/_navigation.html.erb (7.4ms)
+  Rendered layouts/_messages.html.erb (1.3ms)
+Completed 200 OK in 1545ms (Views: 1513.5ms | ActiveRecord: 1.9ms)
+
+
+Started DELETE "/families/4" for 127.0.0.1 at 2014-12-14 14:38:53 +0800
+Processing by FamiliesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"6huPUvqEgY104sqWrQBeMUf21DU+dcKK9EEJ0ATivH4=", "id"=>"4"}
+  [1m[36mChild Load (0.4ms)[0m  [1mSELECT  "children".* FROM "children"  WHERE "children"."id" = ? LIMIT 1[0m  [["id", 4]]
+  [1m[35m (0.7ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mDELETE FROM "children" WHERE "children"."id" = ?[0m  [["id", 4]]
+  [1m[35m (9.4ms)[0m  commit transaction
+Redirected to http://0.0.0.0:3000/families
+Completed 302 Found in 41ms (ActiveRecord: 11.4ms)
+
+
+Started GET "/families" for 127.0.0.1 at 2014-12-14 14:38:53 +0800
+Processing by FamiliesController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mFamily Load (0.5ms)[0m  SELECT  "families".* FROM "families"  WHERE "families"."user_id" = ? LIMIT 1  [["user_id", 1]]
+  [1m[36mChild Load (0.4ms)[0m  [1mSELECT "children".* FROM "children"  WHERE "children"."family_id" = ?[0m  [["family_id", 1]]
+  Rendered families/index.html.erb within layouts/application (8.5ms)
+  Rendered layouts/_navigation_links.html.erb (3.9ms)
+  Rendered layouts/_navigation.html.erb (8.3ms)
+  Rendered layouts/_messages.html.erb (1.1ms)
+Completed 200 OK in 1577ms (Views: 1545.8ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/families" for 127.0.0.1 at 2014-12-14 14:41:26 +0800
+Processing by FamiliesController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mFamily Load (0.5ms)[0m  [1mSELECT  "families".* FROM "families"  WHERE "families"."user_id" = ? LIMIT 1[0m  [["user_id", 1]]
+  [1m[35mChild Load (0.5ms)[0m  SELECT "children".* FROM "children"  WHERE "children"."family_id" = ?  [["family_id", 1]]
+  Rendered families/index.html.erb within layouts/application (12.1ms)
+  Rendered layouts/_navigation_links.html.erb (3.4ms)
+  Rendered layouts/_navigation.html.erb (7.0ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 1544ms (Views: 1515.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/families/new" for 127.0.0.1 at 2014-12-14 14:41:30 +0800
+Processing by FamiliesController#new as HTML
+  Rendered families/new.html.erb within layouts/application (20.1ms)
+  [1m[36mUser Load (1.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered layouts/_navigation_links.html.erb (32.4ms)
+  Rendered layouts/_navigation.html.erb (39.5ms)
+  Rendered layouts/_messages.html.erb (2.9ms)
+Completed 200 OK in 1676ms (Views: 1668.5ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/families" for 127.0.0.1 at 2014-12-14 14:41:34 +0800
+Processing by FamiliesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6huPUvqEgY104sqWrQBeMUf21DU+dcKK9EEJ0ATivH4=", "family"=>{"name"=>"fwefew", "name_chn"=>"fewfewf", "gender"=>"Male"}, "commit"=>"Add child"}
+  [1m[35mUser Load (1.6ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mFamily Load (0.5ms)[0m  [1mSELECT  "families".* FROM "families"  WHERE "families"."user_id" = ? LIMIT 1[0m  [["user_id", 1]]
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36mSQL (1.8ms)[0m  [1mINSERT INTO "children" ("created_at", "family_id", "gender", "name", "name_chn", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-14 06:41:34.754988"], ["family_id", 1], ["gender", "Male"], ["name", "fwefew"], ["name_chn", "fewfewf"], ["updated_at", "2014-12-14 06:41:34.754988"]]
+  [1m[35m (9.2ms)[0m  commit transaction
+Redirected to http://0.0.0.0:3000/families/1
+Completed 302 Found in 85ms (ActiveRecord: 14.0ms)
+
+
+Started GET "/families/1" for 127.0.0.1 at 2014-12-14 14:41:34 +0800
+Processing by FamiliesController#show as HTML
+  Parameters: {"id"=>"1"}
+Redirected to http://0.0.0.0:3000/families
+Completed 302 Found in 18ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/families" for 127.0.0.1 at 2014-12-14 14:41:34 +0800
+Processing by FamiliesController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mFamily Load (0.6ms)[0m  SELECT  "families".* FROM "families"  WHERE "families"."user_id" = ? LIMIT 1  [["user_id", 1]]
+  [1m[36mChild Load (0.6ms)[0m  [1mSELECT "children".* FROM "children"  WHERE "children"."family_id" = ?[0m  [["family_id", 1]]
+  Rendered families/index.html.erb within layouts/application (16.3ms)
+  Rendered layouts/_navigation_links.html.erb (3.8ms)
+  Rendered layouts/_navigation.html.erb (8.4ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 1607ms (Views: 1574.7ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/families/new" for 127.0.0.1 at 2014-12-14 14:41:38 +0800
+Processing by FamiliesController#new as HTML
+  Rendered families/new.html.erb within layouts/application (15.6ms)
+  [1m[35mUser Load (0.8ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  Rendered layouts/_navigation_links.html.erb (18.0ms)
+  Rendered layouts/_navigation.html.erb (23.7ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 1693ms (Views: 1685.6ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/families" for 127.0.0.1 at 2014-12-14 14:41:44 +0800
+Processing by FamiliesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6huPUvqEgY104sqWrQBeMUf21DU+dcKK9EEJ0ATivH4=", "family"=>{"name"=>"grewg", "name_chn"=>"fawefewa", "gender"=>"Female"}, "commit"=>"Add child"}
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mFamily Load (0.5ms)[0m  SELECT  "families".* FROM "families"  WHERE "families"."user_id" = ? LIMIT 1  [["user_id", 1]]
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "children" ("created_at", "family_id", "gender", "name", "name_chn", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["created_at", "2014-12-14 06:41:44.203151"], ["family_id", 1], ["gender", "Female"], ["name", "grewg"], ["name_chn", "fawefewa"], ["updated_at", "2014-12-14 06:41:44.203151"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/families/1
+Completed 302 Found in 53ms (ActiveRecord: 4.5ms)
+
+
+Started GET "/families/1" for 127.0.0.1 at 2014-12-14 14:41:44 +0800
+Processing by FamiliesController#show as HTML
+  Parameters: {"id"=>"1"}
+Redirected to http://0.0.0.0:3000/families
+Completed 302 Found in 11ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/families" for 127.0.0.1 at 2014-12-14 14:41:44 +0800
+Processing by FamiliesController#index as HTML
+  [1m[35mUser Load (1.2ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mFamily Load (0.5ms)[0m  [1mSELECT  "families".* FROM "families"  WHERE "families"."user_id" = ? LIMIT 1[0m  [["user_id", 1]]
+  [1m[35mChild Load (0.4ms)[0m  SELECT "children".* FROM "children"  WHERE "children"."family_id" = ?  [["family_id", 1]]
+  Rendered families/index.html.erb within layouts/application (16.2ms)
+  Rendered layouts/_navigation_links.html.erb (3.2ms)
+  Rendered layouts/_navigation.html.erb (7.2ms)
+  Rendered layouts/_messages.html.erb (0.8ms)
+Completed 200 OK in 1562ms (Views: 1532.9ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/families/new" for 127.0.0.1 at 2014-12-14 14:41:48 +0800
+Processing by FamiliesController#new as HTML
+  Rendered families/new.html.erb within layouts/application (16.5ms)
+  [1m[36mUser Load (0.8ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  Rendered layouts/_navigation_links.html.erb (12.6ms)
+  Rendered layouts/_navigation.html.erb (17.4ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 1699ms (Views: 1691.5ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/families" for 127.0.0.1 at 2014-12-14 14:41:54 +0800
+Processing by FamiliesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6huPUvqEgY104sqWrQBeMUf21DU+dcKK9EEJ0ATivH4=", "family"=>{"name"=>"bbdfsbddfs", "name_chn"=>"myju76i67j", "gender"=>"Male"}, "commit"=>"Add child"}
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mFamily Load (0.7ms)[0m  [1mSELECT  "families".* FROM "families"  WHERE "families"."user_id" = ? LIMIT 1[0m  [["user_id", 1]]
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "children" ("created_at", "family_id", "gender", "name", "name_chn", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-14 06:41:54.833960"], ["family_id", 1], ["gender", "Male"], ["name", "bbdfsbddfs"], ["name_chn", "myju76i67j"], ["updated_at", "2014-12-14 06:41:54.833960"]]
+  [1m[35m (9.5ms)[0m  commit transaction
+Redirected to http://0.0.0.0:3000/families/1
+Completed 302 Found in 84ms (ActiveRecord: 12.9ms)
+
+
+Started GET "/families/1" for 127.0.0.1 at 2014-12-14 14:41:54 +0800
+Processing by FamiliesController#show as HTML
+  Parameters: {"id"=>"1"}
+Redirected to http://0.0.0.0:3000/families
+Completed 302 Found in 12ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/families" for 127.0.0.1 at 2014-12-14 14:41:54 +0800
+Processing by FamiliesController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mFamily Load (0.8ms)[0m  SELECT  "families".* FROM "families"  WHERE "families"."user_id" = ? LIMIT 1  [["user_id", 1]]
+  [1m[36mChild Load (0.5ms)[0m  [1mSELECT "children".* FROM "children"  WHERE "children"."family_id" = ?[0m  [["family_id", 1]]
+  Rendered families/index.html.erb within layouts/application (22.4ms)
+  Rendered layouts/_navigation_links.html.erb (3.6ms)
+  Rendered layouts/_navigation.html.erb (8.1ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 1644ms (Views: 1598.0ms | ActiveRecord: 2.5ms)
+
+
+Started POST "/families" for 127.0.0.1 at 2014-12-14 14:41:56 +0800
+Processing by FamiliesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6huPUvqEgY104sqWrQBeMUf21DU+dcKK9EEJ0ATivH4=", "family"=>{"name"=>"bbdfsbddfs", "name_chn"=>"myju76i67j", "gender"=>"Male"}, "commit"=>"Add child"}
+  [1m[35mUser Load (10.9ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mFamily Load (0.4ms)[0m  [1mSELECT  "families".* FROM "families"  WHERE "families"."user_id" = ? LIMIT 1[0m  [["user_id", 1]]
+  [1m[35m (0.6ms)[0m  begin transaction
+  [1m[36mSQL (0.8ms)[0m  [1mINSERT INTO "children" ("created_at", "family_id", "gender", "name", "name_chn", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", "2014-12-14 06:41:56.716486"], ["family_id", 1], ["gender", "Male"], ["name", "bbdfsbddfs"], ["name_chn", "myju76i67j"], ["updated_at", "2014-12-14 06:41:56.716486"]]
+  [1m[35m (9.2ms)[0m  commit transaction
+Redirected to http://0.0.0.0:3000/families/1
+Completed 302 Found in 71ms (ActiveRecord: 21.9ms)
+
+
+Started GET "/families/1" for 127.0.0.1 at 2014-12-14 14:41:56 +0800
+Processing by FamiliesController#show as HTML
+  Parameters: {"id"=>"1"}
+Redirected to http://0.0.0.0:3000/families
+Completed 302 Found in 10ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/families" for 127.0.0.1 at 2014-12-14 14:41:56 +0800
+Processing by FamiliesController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1[0m
+  [1m[35mFamily Load (0.4ms)[0m  SELECT  "families".* FROM "families"  WHERE "families"."user_id" = ? LIMIT 1  [["user_id", 1]]
+  [1m[36mChild Load (0.5ms)[0m  [1mSELECT "children".* FROM "children"  WHERE "children"."family_id" = ?[0m  [["family_id", 1]]
+  Rendered families/index.html.erb within layouts/application (22.0ms)
+  Rendered layouts/_navigation_links.html.erb (3.7ms)
+  Rendered layouts/_navigation.html.erb (7.5ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 1553ms (Views: 1523.3ms | ActiveRecord: 1.8ms)
+
+
+Started DELETE "/families/7" for 127.0.0.1 at 2014-12-14 14:42:05 +0800
+Processing by FamiliesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"6huPUvqEgY104sqWrQBeMUf21DU+dcKK9EEJ0ATivH4=", "id"=>"7"}
+  [1m[35mChild Load (0.6ms)[0m  SELECT  "children".* FROM "children"  WHERE "children"."id" = ? LIMIT 1  [["id", 7]]
+  [1m[36m (0.6ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  DELETE FROM "children" WHERE "children"."id" = ?  [["id", 7]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://0.0.0.0:3000/families
+Completed 302 Found in 34ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/families" for 127.0.0.1 at 2014-12-14 14:42:05 +0800
+Processing by FamiliesController#index as HTML
+  [1m[35mUser Load (0.9ms)[0m  SELECT  "users".* FROM "users"  WHERE "users"."id" = 1  ORDER BY "users"."id" ASC LIMIT 1
+  [1m[36mFamily Load (0.5ms)[0m  [1mSELECT  "families".* FROM "families"  WHERE "families"."user_id" = ? LIMIT 1[0m  [["user_id", 1]]
+  [1m[35mChild Load (0.5ms)[0m  SELECT "children".* FROM "children"  WHERE "children"."family_id" = ?  [["family_id", 1]]
+  Rendered families/index.html.erb within layouts/application (16.5ms)
+  Rendered layouts/_navigation_links.html.erb (4.0ms)
+  Rendered layouts/_navigation.html.erb (7.9ms)
+  Rendered layouts/_messages.html.erb (1.2ms)
+Completed 200 OK in 1558ms (Views: 1526.9ms | ActiveRecord: 1.9ms)

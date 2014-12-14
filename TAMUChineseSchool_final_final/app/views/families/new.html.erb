@@ -1,0 +1,18 @@
+<div class="familyform">
+  <%= form_for(:family, url: families_path, :html => { :role => 'form'}) do |f| %>
+      <h3>Children sign up</h3>
+      <div class="form-group">
+        <%= f.label :name %>
+        <%= f.text_field :name, :autofocus => true, class: 'form-control' %>
+      </div>
+      <div class="form-group">
+        <%= f.label :name_chn, 'Chinese Name' %>
+        <%= f.text_field :name_chn, class: 'form-control' %>
+      </div>
+      <div class="form-group">
+        <%= f.label :gender %>
+        <%= f.select :gender, ['Male', 'Female'], class: 'form-control' %>
+      </div>
+      <%= f.submit 'Add child', :class => 'button right' %>
+  <% end %>
+</div>
