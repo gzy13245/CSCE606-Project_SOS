@@ -5,7 +5,12 @@ Rails.application.routes.draw do
   resources :users
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   devise_for :courses
+=======
+  resources :families
+
+>>>>>>> 8e642fa15bfa7ca927abcdfadb66245e4eeee201
 =======
   resources :families
 
