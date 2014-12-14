@@ -1,0 +1,26 @@
+<h1>Listing all children</h1>
+
+<%= link_to 'Add child', new_family_path %>
+<br><br>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Chinese Name</th>
+    <th>Gender</th>
+  </tr>
+
+  <% if @children != nil %>
+    <% @children.each do |child| %>
+          <tr>
+            <td><%= child.name %></td>
+            <td><%= child.name_chn %></td>
+            <td><%= child.gender %></td>
+
+            <td><%= link_to 'Delete', family_path(child),
+                            method: :delete, data: { confirm: 'Are you sure to delete?'}%></td>
+
+        </tr>
+    <% end %>
+  <% end %>
+</table>

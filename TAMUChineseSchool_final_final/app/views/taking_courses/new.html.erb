@@ -1,0 +1,17 @@
+<%= form_for :taking_course , url: taking_courses_path do |f| %>
+    <table>
+
+      <tr>
+        <td><%= f.label :user %></td>
+
+        <td> <%= f.select :user_id, @users.map {|r| [r.fullname,r.id] } %></td>
+
+      </tr>
+
+    </table>
+
+    <p>
+      <%= f.submit value="Add Teacher" %>
+    </p>
+
+<% end %>

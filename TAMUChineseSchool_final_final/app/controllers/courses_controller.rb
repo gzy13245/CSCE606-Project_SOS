@@ -20,7 +20,7 @@ class CoursesController < ApplicationController
 
   def new
     @teachers=User.select{|a| a.teacher?}
-    
+
   end
 
   def create
