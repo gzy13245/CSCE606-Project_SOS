@@ -14,5 +14,6 @@ Rails.application.routes.draw do
   get 'school_rules' => 'school_rules#index'
   get 'teachers_guidelines' => 'teachers_guidelines#index'
   get 'students_handbook' => 'students_handbook#index'
+  get 'contact' => 'contact#index'
   resources :taking_courses
 end
