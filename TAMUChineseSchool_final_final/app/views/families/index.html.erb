@@ -1,34 +1,54 @@
+
+<div class="container">
+  <div class="row">
+
 <h1>Listing all children</h1>
 
-<%= link_to 'Add child', new_family_path %>
-<br><br>
 
-<table>
-  <tr>
+
+
+    <div class="row">
+
+      <br><br>
+      <table class="table">
+    <tr>
     <th>Name</th>
     <th>Chinese Name</th>
     <th>Gender</th>
     <th>Course Taking</th>
-  </tr>
+
+
+
+    </tr>
 
   <% if @children != nil %>
     <% @children.each do |child| %>
           <tr>
-            <td><%= child.name %></td>
+            <td><%= child.name %><%= link_to 'Delete', taking_course_path(child),
+                                             method: :delete, data: { confirm: 'Are you sure to delete?'}%></td>
             <td><%= child.name_chn %></td>
             <td><%= child.gender %></td>
 
-            <% @courses=child.courses.map{|r| r.name}%>
+            <% @courses=child.courses.map{|r| [r.name,r.id] }%>
             <% if @courses != nil %>
-                <td><%= @courses.join(",") %></td>
+                <% @courses.each do |course| %>
+                <td><%= course.first %> <%= link_to 'Drop', taking_course_path(course.second),
+                                              method: :delete, data: { confirm: 'Are you sure to drop '+course.first+'?'}%></td>
+                <% end %>
             <% end %>
 
 
-            <td><%= link_to 'Delete', family_path(child),
-                            method: :delete, data: { confirm: 'Are you sure to delete?'}%></td>
+
+
 
 
         </tr>
     <% end %>
   <% end %>
-</table>
+
+      </table>
+      <%= link_to 'Add Child', new_family_path %>&nbsp;&nbsp;&nbsp;  &nbsp;<%= link_to 'Add Course', new_taking_course_path%>
+      </div>
+  </div>
+</div>
+

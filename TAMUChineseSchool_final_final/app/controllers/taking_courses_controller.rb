@@ -59,10 +59,10 @@ class TakingCoursesController < ApplicationController
   end
 
   def destroy
-    child = Child.find(params[:id])
-    child.destroy
+    takingCourse = TakingCourse.find_by_course_id(params[:id])
+    takingCourse.destroy
 
-    redirect_to families_path, :notice => "Child deleted."
+    redirect_to families_path, :notice => "Course deleted."
 
 #    user = User.find(params[:id])
 #    authorize user

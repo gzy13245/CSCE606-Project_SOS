@@ -51,6 +51,11 @@
   <% end %>
         </tbody>
 </table>
+      <% if  not current_user.blank?%>
+
+      <%= link_to 'Add Course', new_taking_course_path%>
+      <% end %>
+
     </div>
   </div>
 </div>
