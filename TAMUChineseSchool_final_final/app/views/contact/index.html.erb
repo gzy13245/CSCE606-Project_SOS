@@ -3,6 +3,12 @@
   <%= form_for :contact, url: contact_path do |f| %>
 
 
+      <div class="form-group">
+        <%= f.label :Send_to %>
+
+     
+        <%= f.select( :to_email, ['Lan Zhou', 'Qisu Qi'] )%>
+      </div>
 
       <div class="form-group">
         <%= f.label :Your_Name %>
@@ -12,6 +18,13 @@
       <div class="form-group">
       <%= f.text_area :name %>
       </div>
+
+
+
+      <div class="form-group">
+        <%= f.text_area :name %>
+      </div>
+
 
       <div class="form-group">
         <%= f.label :Your_Email_Address %>
