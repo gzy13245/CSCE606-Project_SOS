@@ -2,6 +2,7 @@ class CoursesController < ApplicationController
   include Pundit
   rescue_from Pundit::NotAuthorizedError, with: :user_not_authorized
 
+
   def index
 
     @courses = Course.all
@@ -34,6 +35,24 @@ class CoursesController < ApplicationController
 
     @course.save
     redirect_to @course
+  end
+
+  def edit
+    @course = Course.find(params[:id])
+    authorize @course
+    @teachers=User.select{|a| a.teacher?}
+  end
+
+  def update
+    @course = Course.find(params[:id])
+    authorize @course
+    @teachers=User.select{|a| a.teacher?}
+
+    if @course.update(course_params)
+      redirect_to courses_path, :notice => "Course updated."
+    else
+      render 'edit',:alert => "Unable to update user."
+    end
   end
 
 

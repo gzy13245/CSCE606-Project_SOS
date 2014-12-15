@@ -32,11 +32,13 @@ ActiveRecord::Schema.define(version: 20141214164736) do
     t.datetime "start_time"
     t.datetime "end_time"
     t.string   "textbook"
-    t.string   "user_id"
+    t.integer  "user_id"
     t.string   "course_discription"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "courses", ["user_id"], name: "index_courses_on_user_id"
 
   create_table "events", force: true do |t|
     t.datetime "year"

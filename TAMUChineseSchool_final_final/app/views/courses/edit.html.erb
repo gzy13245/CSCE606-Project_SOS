@@ -1,0 +1,65 @@
+<h1>Editing course</h1>
+
+
+<div class="authform">
+  <%= form_for :course, url: course_path(@course), method: :patch do |f| %>
+
+      <div class="form-group">
+        <%= f.label :year %>
+        <%= f.datetime_select :year, { include_blank: false, twelve_hour: false, minute_step: 15, ampm: false,start_year: 2012, discard_day:true, discard_month:true,discard_hour:true, discard_minute:true }, style: "width: 45%;" %>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :semester %>
+        <%= f.select :semester, ['Spring', 'Fall'] %>
+
+      </div>
+
+      <div class="form-group">
+        <%= f.label :name %>
+        <%= f.text_area :name %>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :class_room %>
+        <%= f.text_area :class_room %>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :start_time %>
+
+
+        <%= f.datetime_select :start_time, { discard_year:true, include_blank: false, twelve_hour: false, minute_step: 15, ampm: false,hour: 'Choose hour', minute: 'Choose minute' }, style: "width: 45%;" %>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :end_time %>
+
+        <%= f.datetime_select :end_time, {discard_year:true, include_blank: false, twelve_hour: false, minute_step: 15, ampm: false,hour: 'Choose hour', minute: 'Choose minute' }, style: "width: 45%;" %>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :textbook %>
+        <%= f.text_field :textbook %>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :teacher %>
+
+        <%= f.select :user_id, @teachers.map {|r| [r.name,r.id] } %>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :course_discription %>
+        <%= f.text_area :course_discription %>
+      </div>
+
+      <%= f.submit 'Edit Course', :class => 'button right' %>
+
+
+  <% end %>
+</div>
+
+
+
+

@@ -8,7 +8,7 @@ class CreateCourses < ActiveRecord::Migration
       t.timestamp :start_time
       t.timestamp :end_time
       t.string :textbook
-      t.string :user_id
+      t.references :user, index: true
       t.string :course_discription
 
       t.timestamps
