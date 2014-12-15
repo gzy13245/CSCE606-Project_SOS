@@ -24,7 +24,7 @@
   <% if @children != nil %>
     <% @children.each do |child| %>
           <tr>
-            <td><%= child.name %><%= link_to 'Delete', taking_course_path(child),
+            <td><%= child.name %><%= link_to 'Delete', family_path(child),
                                              method: :delete, data: { confirm: 'Are you sure to delete?'}%></td>
             <td><%= child.name_chn %></td>
             <td><%= child.gender %></td>
@@ -47,7 +47,7 @@
   <% end %>
 
       </table>
-      <%= link_to 'Add Child', new_family_path %>&nbsp;&nbsp;&nbsp;  &nbsp;<%= link_to 'Add Course', new_taking_course_path%>
+      <%= link_to 'Add Child', new_family_path %>&nbsp;&nbsp;&nbsp;  &nbsp;<%= link_to 'Course Registration', new_taking_course_path%>
       </div>
   </div>
 </div>

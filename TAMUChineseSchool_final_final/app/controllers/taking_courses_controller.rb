@@ -10,9 +10,17 @@ class TakingCoursesController < ApplicationController
 
 
     @family = current_user.family
+    if @family.blank?
+      redirect_to new_family_path, :alert => "Please add child(ren) first."
+    else
+
     @children = @family.children
 
-  end
+    if @children.blank?
+      redirect_to new_family_path, :alert => "Please add child(ren) first."
+    end
+    end
+    end
 
   def create
     @curr_user = current_user
@@ -22,6 +30,10 @@ class TakingCoursesController < ApplicationController
     cur_params = secure_params
 
     @family = current_user.family
+    if @family.blank?
+      redirect_to new_family_path, :alert => "Please add child(ren) first."
+    else
+
     @children = @family.children
 
     if @children.blank?
@@ -33,7 +45,8 @@ class TakingCoursesController < ApplicationController
    #   redirect_to taking_courses_path
     redirect_to @family
       end
-  end
+    end
+    end
 
   def index
    # @taking_courses=TakingCourse.all
