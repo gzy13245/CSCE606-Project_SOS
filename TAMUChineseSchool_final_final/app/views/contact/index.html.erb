@@ -1,0 +1,49 @@
+
+<div class="authform">
+  <%= form_for :contact, url: contact_path do |f| %>
+
+
+      <div class="form-group">
+        <%= f.label :Send_to %>
+
+
+        <%= f.select( :to_email, ['Lan Zhou', 'Qisu Qi'] )%>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :Your_Name %>
+
+      </div>
+
+      <div class="form-group">
+      <%= f.text_area :name %>
+      </div>
+
+
+
+
+
+      <div class="form-group">
+        <%= f.label :Your_Email_Address %>
+
+      </div>
+
+      <div class="form-group">
+      <%= f.email_field :email %>
+        </div>
+
+      <div class="form-group">
+        <%= f.label :Message %>
+
+      </div>
+
+      <div class="form-group">
+      <%= f.text_area :message %>
+      </div>
+      <%= f.submit 'Send', :class => 'button right' %>
+
+
+  <% end %>
+</div>
+
+
